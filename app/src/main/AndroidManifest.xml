@@ -15,9 +15,11 @@
         tools:targetApi="31">
         <activity
             android:name=".Login"
+            android:windowSoftInputMode="stateHidden|adjustResize"
             android:exported="false" />
         <activity
             android:name=".Singup"
+            android:windowSoftInputMode="stateHidden|adjustResize"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
