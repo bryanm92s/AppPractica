@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_fondo">#F6C700</color>
+    <color name="color_negro">#000000</color>
+    <color name="color_blanco">#FFFFFF</color>
+    <color name="color_gris_claro">#9D9C9C</color>
+    <color name="color_gris_oscuro">#4B4747</color>
+    <color name="color_letra_clara">#F5F5F5</color>
+
+</resources>
