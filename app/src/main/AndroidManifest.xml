@@ -14,13 +14,13 @@
         android:theme="@style/Theme.AppPractica"
         tools:targetApi="31">
         <activity
-            android:name=".Login"
-            android:windowSoftInputMode="stateHidden|adjustResize"
-            android:exported="false" />
+            android:name=".SignUp"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity
-            android:name=".Singup"
-            android:windowSoftInputMode="stateHidden|adjustResize"
-            android:exported="false" />
+            android:name=".Login"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -30,6 +30,7 @@
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
