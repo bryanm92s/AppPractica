@@ -7,4 +7,12 @@
     <color name="color_gris_oscuro">#4B4747</color>
     <color name="color_letra_clara">#F5F5F5</color>
 
+
+    <color name="bottom_nav_background">#F6C700</color>
+    <color name="bottom_nav_item">#9D9C9C</color>
+    <color name="bottom_nav_selected_item">#000000</color>
+    <color name="fragment_bg_color">#9D9C9C</color>
+
+
+
 </resources>

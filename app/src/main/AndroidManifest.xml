@@ -23,7 +23,8 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.BottomNav"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true"
