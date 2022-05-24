@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.core.util.PatternsCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.apppractica.R
@@ -24,10 +25,16 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        //calling view mdioel object
+        //calling view model object
         val userDetailsRepository = ViewModelProvider(this@SignUp).get(LoginViewModel::class.java)
 
-        btnAceptar.setOnClickListener{
+
+        btn_back_login.setOnClickListener {
+            val intent: Intent = Intent(this@SignUp, Login::class.java)
+            startActivity(intent)
+        }
+
+        btnAceptar.setOnClickListener {
 
             if (validation()) {
                 userDetailsRepository.getGetAllData().observe(this, object : Observer<List<User>> {
@@ -38,20 +45,20 @@ class SignUp : AppCompatActivity() {
 
                             if (userObject[i].name?.equals(textInputEditTextNombre.text.toString())!!) {
                                 isExist = true
-                                // Toast.makeText(this@SignUp," User Already Registered ", Toast.LENGTH_SHORT).show()
+                                //Toast.makeText(this@SignUp,"Usuario ya se encuentra registrado", Toast.LENGTH_SHORT).show()
                                 break
 
                             } else {
                                 isExist = false
+
                                 continue
                             }
                         }
 
                         if (isExist) {
-                            Toast.makeText(this@SignUp, "Usuario ya se encuentra registrado!!! ", Toast.LENGTH_SHORT)
-                                .show()
-
-                        } else {
+                             Toast.makeText(this@SignUp,"Usuario ya se encuentra registrado", Toast.LENGTH_SHORT).show()
+                        }
+                        else {
 
                             val user = User()
                             user.name = textInputEditTextNombre.text.toString()
@@ -59,7 +66,11 @@ class SignUp : AppCompatActivity() {
                             user.password = textInputEditTextContrasena.text.toString()
                             val userDatabase = UserDatabase
                             userDatabase.getDatabase(this@SignUp)?.daoAccess()?.insertUserData(user)
-                            Toast.makeText(this@SignUp, "Usuario registrado exitosamente", Toast.LENGTH_SHORT)
+                            Toast.makeText(
+                                this@SignUp,
+                                "Usuario registrado exitosamente",
+                                Toast.LENGTH_SHORT
+                            )
                                 .show()
 
                             // Limpiar EditText
@@ -70,25 +81,25 @@ class SignUp : AppCompatActivity() {
                             // Enviar al Login
                             val intent: Intent = Intent(this@SignUp, Login::class.java)
                             startActivity(intent)
+
+                            //isExist = true
                         }
                     }
                 })
             }
         }
-
-        btn_back_login.setOnClickListener {
-            val intent: Intent = Intent(this, Login::class.java)
-            startActivity(intent)
-        }
     }
-
     private fun validation(): Boolean {
         if (textInputEditTextNombre.text.isNullOrEmpty()) {
             Toast.makeText(this@SignUp, "Ingrese el usuario", Toast.LENGTH_SHORT).show()
             return false
         }
+
         if (textInputEditTextCorreo.text.isNullOrEmpty()) {
             Toast.makeText(this@SignUp, "Ingrese el correo electrónico", Toast.LENGTH_SHORT).show()
+            return false
+        }else if (!PatternsCompat.EMAIL_ADDRESS.matcher(textInputEditTextCorreo.text.toString()).matches()){
+            Toast.makeText(this@SignUp,"Por favor ingrese un correo electrónico válido",Toast.LENGTH_SHORT).show()
             return false
         }
 
