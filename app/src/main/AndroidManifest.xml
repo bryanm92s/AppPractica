@@ -24,7 +24,8 @@
         <activity
             android:name=".Views.MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.BottomNav"/>
+            android:theme="@style/Theme.AppPractica"
+           />
         <activity
             android:name=".Views.SplashActivity"
             android:exported="true"
