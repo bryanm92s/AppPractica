@@ -1,14 +1,14 @@
-package com.example.apppractica
+package com.example.apppractica.Views
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.apppractica.R
 import com.example.apppractica.db.UserDatabase
-import com.example.apppractica.modelorentity.User
+import com.example.apppractica.entity.User
 import com.example.apppractica.viewmodel.LoginViewModel
 import kotlinx.android.synthetic.main.activity_sign_up.*
 

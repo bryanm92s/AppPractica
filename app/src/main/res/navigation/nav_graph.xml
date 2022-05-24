@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/inicioFragment"
-        android:name="com.example.apppractica.InicioFragment"
+        android:name="com.example.apppractica.Fragments.InicioFragment"
         android:label="fragment_inicio"
         tools:layout="@layout/fragment_inicio" />
     <fragment
         android:id="@+id/buscarFragment"
-        android:name="com.example.apppractica.BuscarFragment"
+        android:name="com.example.apppractica.Fragments.BuscarFragment"
         android:label="fragment_buscar"
         tools:layout="@layout/fragment_buscar" />
     <fragment
         android:id="@+id/playFragment"
-        android:name="com.example.apppractica.PlayFragment"
+        android:name="com.example.apppractica.Fragments.PlayFragment"
         android:label="fragment_play"
         tools:layout="@layout/fragment_play" />
     <fragment
         android:id="@+id/perfilFragment"
-        android:name="com.example.apppractica.PerfilFragment"
+        android:name="com.example.apppractica.Fragments.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" />
 </navigation>

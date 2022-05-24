@@ -4,7 +4,8 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import com.example.apppractica.Repository.UserDetailsRepository
-import com.example.apppractica.modelorentity.User
+import com.example.apppractica.entity.User
+
 
 class LoginViewModel(application: Application) : AndroidViewModel(application) {
 

@@ -4,7 +4,8 @@ import android.os.AsyncTask
 import androidx.lifecycle.LiveData
 import com.example.apppractica.dao.DaoAccess
 import com.example.apppractica.db.UserDatabase
-import com.example.apppractica.modelorentity.User
+import com.example.apppractica.entity.User
+
 
 class UserDetailsRepository(application: Application) {
 

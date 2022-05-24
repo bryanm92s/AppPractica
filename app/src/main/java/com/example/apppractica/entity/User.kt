@@ -1,4 +1,4 @@
-package com.example.apppractica.modelorentity
+package com.example.apppractica.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
