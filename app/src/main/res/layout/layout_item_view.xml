@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+        <ImageView
+
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/movielogo"
+            tools:src="@drawable/grinch"
+            android:scaleType="fitCenter"
+            android:layout_marginEnd="10dp"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movietitle"
+                android:layout_margin="8dp"
+                android:textSize="28dp"
+                tools:text="Grinch"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/moviedate"
+                android:layout_margin="8dp"
+                android:textSize="20dp"
+                tools:text="2000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/moviecast"
+                android:layout_margin="8dp"
+                android:textSize="16dp"
+                tools:text="Película para navidad"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
