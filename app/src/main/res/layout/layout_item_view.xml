@@ -1,54 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:background="@color/color_negro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:orientation="horizontal">
-        <ImageView
+<TextView
+    android:id="@+id/tvMovieTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:text="El Grinch"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/ivLogo"/>
 
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:id="@+id/movielogo"
-            tools:src="@drawable/grinch"
-            android:scaleType="fitCenter"
-            android:layout_marginEnd="10dp"/>
-        <LinearLayout
+    <TextView
+        android:id="@+id/tvMovieDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2000"
+        app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
+        app:layout_constraintStart_toEndOf="@+id/ivLogo"/>
 
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/movietitle"
-                android:layout_margin="8dp"
-                android:textSize="28dp"
-                tools:text="Grinch"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/moviedate"
-                android:layout_margin="8dp"
-                android:textSize="20dp"
-                tools:text="2000"/>
+    <TextView
+        android:id="@+id/tvMovieCast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Jim Carrey"
+        app:layout_constraintTop_toBottomOf="@id/tvMovieDate"
+        app:layout_constraintStart_toEndOf="@+id/ivLogo"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/moviecast"
-                android:layout_margin="8dp"
-                android:textSize="16dp"
-                tools:text="Película para navidad"/>
-
-
-    </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

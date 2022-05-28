@@ -1,14 +1,16 @@
 package com.example.apppractica.Fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.apppractica.MovieAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.example.apppractica.MovieProvider
 import com.example.apppractica.R
+import com.example.apppractica.adapter.MovieAdapter
+import com.example.apppractica.adapter.MovieViewHolder
 import kotlinx.android.synthetic.main.fragment_inicio.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -26,8 +28,12 @@ class InicioFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    //private var layoutManager: RecyclerView.LayoutManager? = null
+    //private var adapter: RecyclerView.Adapter<MovieViewHolder>? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
@@ -38,8 +44,16 @@ class InicioFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inicio, container, false)
+        val view = inflater.inflate(R.layout.fragment_inicio, container, false)
+        // Iniciar RecyclerView en un Fragment.
+        // Dentro de onCreateView
+        val recyclerView: RecyclerView = view.findViewById(R.id.movieRecycler) as RecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(view.context)
+        recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
+
+        return view
     }
 
     companion object {

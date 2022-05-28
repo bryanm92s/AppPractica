@@ -1,0 +1,27 @@
+package com.example.apppractica.adapter
+
+import android.view.View
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.example.apppractica.Movies
+import com.example.apppractica.R
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.layout_item_view.view.*
+
+
+class MovieViewHolder (view: View): RecyclerView.ViewHolder(view){
+
+    val MovieLogo = view.findViewById<ImageView>(R.id.ivLogo)
+    val MovieTitle = view.findViewById<TextView>(R.id.tvMovieTitle)
+    val MovieDate = view.findViewById<TextView>(R.id.tvMovieDate)
+    val MovieCast = view.findViewById<TextView>(R.id.tvMovieCast)
+
+    fun render(items: Movies) {
+        MovieTitle.text = items.title
+        MovieDate.text = items.date
+        MovieCast.text = items.cast
+        Picasso.get().load(items.logo).into(itemView.ivLogo)
+    }
+
+}
