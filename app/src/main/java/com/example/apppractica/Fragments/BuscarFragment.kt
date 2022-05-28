@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.apppractica.MovieProvider
 import com.example.apppractica.R
+import com.example.apppractica.adapter.MovieAdapter
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,8 +39,32 @@ class BuscarFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_buscar, container, false)
+        val view = inflater.inflate(R.layout.fragment_buscar, container, false)
+        // Iniciar RecyclerView en un Fragment.
+        // Dentro de onCreateView
+
+        val recyclerView: RecyclerView = view.findViewById(R.id.movieRecycler) as RecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(view.context)
+        recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
+        return view
+
+        // Agregar línea divisora
+        /*val manager=LinearLayoutManager(view.context)
+        val mDividerItemDecoration = DividerItemDecoration(
+            recyclerView.context,
+           manager.orientation
+        )
+
+        recyclerView.addItemDecoration(mDividerItemDecoration)*/
+
     }
+
+    // Iniciar RecyclerView en una actividad
+    //val recyclerView = findViewById<RecyclerView>(R.id.movieRecycler)
+    //movieRecycler.layoutManager = LinearLayoutManager(this)
+    //recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
+
+
 
     companion object {
         /**

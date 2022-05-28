@@ -44,16 +44,8 @@ class InicioFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_inicio, container, false)
-        // Iniciar RecyclerView en un Fragment.
-        // Dentro de onCreateView
-        val recyclerView: RecyclerView = view.findViewById(R.id.movieRecycler) as RecyclerView
-        recyclerView.layoutManager = LinearLayoutManager(view.context)
-        recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
-
-        return view
+        return inflater.inflate(R.layout.fragment_inicio, container, false)
     }
 
     companion object {
