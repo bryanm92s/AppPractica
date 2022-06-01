@@ -18,6 +18,7 @@ class MovieViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     val MovieDate = view.findViewById<TextView>(R.id.tvMovieDate)
     val MovieCast = view.findViewById<TextView>(R.id.tvMovieCast)
 
+
     fun render(items: Movies) {
 
         MovieTitle.text = items.title
@@ -30,8 +31,18 @@ class MovieViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         }*/
 
         // Gestionar clicks en el cuadro del RecyclerView
+
         itemView.setOnClickListener {
             Toast.makeText(itemView.ivLogo.context,items.title,Toast.LENGTH_SHORT).show()
+
+            //val context=itemView.ivLogo.context
+
+            //val intent = Intent(itemView.ivLogo.context, MovieDetail::class.java)
+
+            //intent.putExtra("Title", items.title)
+            //intent.putExtra("Cast", items.cast)
+            //itemView.context.startActivity(intent);
+            //itemView.ivLogo.context.startActivity(intent)
         }
 
     }

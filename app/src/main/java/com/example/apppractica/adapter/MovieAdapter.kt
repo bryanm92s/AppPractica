@@ -19,6 +19,7 @@ class MovieAdapter(private val movieList: List<Movies>) : RecyclerView.Adapter<M
         return MovieViewHolder(layoutInflater.inflate(R.layout.layout_item_view,parent, false))
     }
 
+
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         //holder.movieLogo.setImageResource(items.get(position).logo)
         //holder.movieTitle?.text=items.get(position).title
@@ -41,6 +42,11 @@ class MovieAdapter(private val movieList: List<Movies>) : RecyclerView.Adapter<M
         //var movieCast = itemView.moviecast
 
     }*/
+
+
+
+
+
 
 
 }

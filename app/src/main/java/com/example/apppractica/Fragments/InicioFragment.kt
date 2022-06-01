@@ -1,17 +1,17 @@
 package com.example.apppractica.Fragments
 
+import HorizontalAdapter
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.MovieProvider
 import com.example.apppractica.R
 import com.example.apppractica.adapter.MovieAdapter
-import com.example.apppractica.adapter.MovieViewHolder
-import kotlinx.android.synthetic.main.fragment_inicio.*
+import com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,12 +28,8 @@ class InicioFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    //private var layoutManager: RecyclerView.LayoutManager? = null
-    //private var adapter: RecyclerView.Adapter<MovieViewHolder>? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
@@ -45,8 +41,17 @@ class InicioFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inicio, container, false)
+        val view = inflater.inflate(R.layout.fragment_inicio, container, false)
+        // Iniciar RecyclerView en un Fragment.
+        // Dentro de onCreateView
+
+        val recyclerView: RecyclerView = view.findViewById<MultiSnapRecyclerView>(R.id.first_recycler_view) as RecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(view.context,LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.adapter = HorizontalAdapter(SIMPLE_TITLES)
+        return view
+
     }
+
 
     companion object {
         /**
@@ -55,7 +60,7 @@ class InicioFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment InicioFragment.
+         * @return A new instance of fragment BuscarFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
@@ -66,5 +71,25 @@ class InicioFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+
+
+        private val SIMPLE_TITLES = arrayOf(
+            "Android",
+            "Beta",
+            "Cupcake",
+            "Donut",
+            "Eclair",
+            "Froyo",
+            "Gingerbread",
+            "Honeycomb",
+            "Ice Cream Sandwich",
+            "Jelly Bean",
+            "KitKat",
+            "Lollipop",
+            "Marshmallow",
+            "Nougat",
+            "Oreo"
+        )
+
     }
 }
