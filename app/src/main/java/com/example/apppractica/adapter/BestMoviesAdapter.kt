@@ -6,7 +6,7 @@ import android.widget.TextView
 import com.example.apppractica.R
 
 
-class HorizontalAdapter(private val titles: Array<String>) : androidx.recyclerview.widget.RecyclerView.Adapter<HorizontalAdapter.ViewHolder>() {
+class BestMoviesAdapter(private val titles: Array<String>) : androidx.recyclerview.widget.RecyclerView.Adapter<BestMoviesAdapter.ViewHolder>() {
 
   override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
     val inflater = LayoutInflater.from(viewGroup.context)
@@ -17,6 +17,7 @@ class HorizontalAdapter(private val titles: Array<String>) : androidx.recyclervi
   override fun onBindViewHolder(holder: ViewHolder, position: Int) {
     val title = titles[position]
     holder.title.text = title
+
   }
 
   override fun getItemCount(): Int {
@@ -25,6 +26,6 @@ class HorizontalAdapter(private val titles: Array<String>) : androidx.recyclervi
 
   class ViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(
       itemView) {
-    val title: TextView = itemView.findViewById(R.id.title) as TextView
+    val title: TextView = itemView.findViewById(R.id.tvtitle_) as TextView
   }
 }

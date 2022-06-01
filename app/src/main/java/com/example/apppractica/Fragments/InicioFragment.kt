@@ -1,6 +1,7 @@
 package com.example.apppractica.Fragments
 
-import HorizontalAdapter
+
+import BestMoviesAdapter
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -47,7 +48,7 @@ class InicioFragment : Fragment() {
 
         val recyclerView: RecyclerView = view.findViewById<MultiSnapRecyclerView>(R.id.first_recycler_view) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(view.context,LinearLayoutManager.HORIZONTAL, false)
-        recyclerView.adapter = HorizontalAdapter(SIMPLE_TITLES)
+        recyclerView.adapter = BestMoviesAdapter(SIMPLE_TITLES)
         return view
 
     }

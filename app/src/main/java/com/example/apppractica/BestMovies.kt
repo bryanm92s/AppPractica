@@ -1,5 +1,5 @@
 package com.example.apppractica
 
-data class BestMovies(var logo:String, var title:String, var date: String,  var cast: String ){
+data class BestMovies(var logo:String, var stars:Double, var title: String){
 
 }
