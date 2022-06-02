@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.apppractica.BestMoviesProvider
 import com.example.apppractica.MovieProvider
 import com.example.apppractica.R
 import com.example.apppractica.adapter.MovieAdapter
@@ -48,7 +49,8 @@ class InicioFragment : Fragment() {
 
         val recyclerView: RecyclerView = view.findViewById<MultiSnapRecyclerView>(R.id.first_recycler_view) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(view.context,LinearLayoutManager.HORIZONTAL, false)
-        recyclerView.adapter = BestMoviesAdapter(SIMPLE_TITLES)
+        //recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
+        recyclerView.adapter = BestMoviesAdapter(BestMoviesProvider.bestMovieList)
         return view
 
     }
@@ -74,7 +76,7 @@ class InicioFragment : Fragment() {
             }
 
 
-        private val SIMPLE_TITLES = arrayOf(
+        /*private val SIMPLE_TITLES = arrayOf(
             "Android",
             "Beta",
             "Cupcake",
@@ -90,7 +92,7 @@ class InicioFragment : Fragment() {
             "Marshmallow",
             "Nougat",
             "Oreo"
-        )
+        )*/
 
     }
 }
