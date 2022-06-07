@@ -47,7 +47,7 @@ class InicioFragment : Fragment() {
         // Iniciar RecyclerView en un Fragment.
         // Dentro de onCreateView
 
-        val recyclerView: RecyclerView = view.findViewById<MultiSnapRecyclerView>(R.id.first_recycler_view) as RecyclerView
+        val recyclerView: RecyclerView = view.findViewById<RecyclerView>(R.id.first_recycler_view) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(view.context,LinearLayoutManager.HORIZONTAL, false)
         //recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
         recyclerView.adapter = BestMoviesAdapter(BestMoviesProvider.bestMovieList)

@@ -6,6 +6,7 @@
     <color name="color_gris_claro">#9D9C9C</color>
     <color name="color_gris_oscuro">#4B4747</color>
     <color name="color_letra_clara">#F5F5F5</color>
+    <color name="color_fondo_layout">#F9F9F9</color>
 
 
     <color name="bottom_nav_background">#F6C700</color>
