@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.MovieProvider
@@ -46,17 +47,15 @@ class BuscarFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.movieRecycler) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(view.context)
         recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
-        return view
-
         // Agregar línea divisora
-        /*val manager=LinearLayoutManager(view.context)
+        val manager=LinearLayoutManager(view.context)
         val mDividerItemDecoration = DividerItemDecoration(
             recyclerView.context,
-           manager.orientation
+            manager.orientation
         )
 
-        recyclerView.addItemDecoration(mDividerItemDecoration)*/
-
+        recyclerView.addItemDecoration(mDividerItemDecoration)
+        return view
     }
 
     // Iniciar RecyclerView en una actividad

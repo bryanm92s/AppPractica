@@ -51,7 +51,7 @@ class ProfileAdapter(private val profileList: List<Profile>) : androidx.recycler
 
         fun render(items: Profile) {
 
-            profileDescripcion.text = items.titulo
+            profileDescripcion.text = items.descripcion
             profileTitulo.text=items.titulo
             profileCantidad.text= items.cantidad.toString()
 
