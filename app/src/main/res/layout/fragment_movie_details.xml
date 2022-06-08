@@ -12,21 +12,21 @@
         android:layout_height="35dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/btn_icon_back"
-        app:layout_constraintEnd_toStartOf="@id/item_title_one"
+        app:layout_constraintEnd_toStartOf="@id/titulo_ppal"
         app:layout_constraintHorizontal_bias="0.20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/item_title_one"
+        android:id="@+id/titulo_ppal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/robotobold"
         android:gravity="center"
         android:textColor="@color/color_negro"
-        android:textSize="15sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,26 +35,26 @@
         tools:ignore="TextContrastCheck,TextContrastCheck"
         tools:text="Queens Gambit" />
     <TextView
-        android:id="@+id/item_Linea"
+        android:id="@+id/divisor_uno"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/item_title_one"
+        app:layout_constraintTop_toBottomOf="@id/titulo_ppal"
         android:gravity="center"
         android:textSize="15sp"
         android:background="@color/fragment_bg_color"
         />
 
     <LinearLayout
-        android:id="@+id/container_title"
+        android:id="@+id/contenedor_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/item_Linea"
+        app:layout_constraintTop_toBottomOf="@id/divisor_uno"
         android:orientation="vertical"
         android:layout_marginHorizontal="45dp"
         >
@@ -65,7 +65,6 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/figure_yellow_one"
                 android:layout_width="5dp"
                 android:layout_height="29dp"
                 android:layout_marginTop="14dp"
@@ -91,7 +90,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/item_title_original"
+                android:id="@+id/subtitulo_original"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
@@ -102,16 +101,14 @@
                 tools:text="The queens Gambit (título original)" />
 
         </LinearLayout>
-
-
-
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/item_type"
+                android:id="@+id/tipo_pelicula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
@@ -126,11 +123,11 @@
 
 
     <ImageView
-        android:id="@+id/item_video"
+        android:id="@+id/video_play"
         android:layout_width="match_parent"
         android:scaleType="fitXY"
         android:layout_height="200dp"
-        app:layout_constraintTop_toBottomOf="@id/container_title"
+        app:layout_constraintTop_toBottomOf="@id/contenedor_titulo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:src="@drawable/gamb"
@@ -139,18 +136,18 @@
 
     <!-- Description -->
     <LinearLayout
-        android:id="@+id/container_description"
+        android:id="@+id/contenedor_descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/item_video"
+        app:layout_constraintTop_toBottomOf="@id/video_play"
         android:layout_marginTop="15dp"
         android:layout_marginHorizontal="40dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/item_image"
+            android:id="@+id/imagen_miniatura"
             android:layout_width="90dp"
             android:layout_height="135dp"
             tools:src="@drawable/gambito" />
@@ -167,7 +164,7 @@
                 android:gravity="center_vertical"
                 >
                 <TextView
-                    android:id="@+id/item_gender"
+                    android:id="@+id/genero_pelicula"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="10dp"
@@ -185,7 +182,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/item_rating"
+                    android:id="@+id/calificacion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
@@ -196,7 +193,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/item_synopsis"
+                android:id="@+id/sinopsis"
                 android:layout_width="220dp"
                 android:layout_height="90dp"
                 android:layout_marginTop="12dp"
@@ -211,17 +208,17 @@
 
     <!-- chapter Guide  -->
     <LinearLayout
-        android:id="@+id/container_chapters"
+        android:id="@+id/contenedor_capitulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/container_description"
+        app:layout_constraintTop_toBottomOf="@id/contenedor_descripcion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/linea_two"
+            android:id="@+id/divisor_medio"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/fragment_bg_color"
@@ -245,14 +242,13 @@
                 tools:ignore="TextContrastCheck,TextContrastCheck" />
 
             <TextView
-                android:id="@+id/chapters_number"
+                android:id="@+id/cantidad_capitulos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/color_gris_claro"
                 android:textSize="12sp"
                 tools:ignore="SmallSp"
                 tools:text="7 episodios" />
-
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="25dp"
@@ -262,7 +258,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/linea_three"
+            android:id="@+id/divisor_final"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/fragment_bg_color"
@@ -274,7 +270,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        app:layout_constraintTop_toBottomOf="@id/container_chapters"
+        app:layout_constraintTop_toBottomOf="@id/contenedor_capitulos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:paddingHorizontal="15dp"
@@ -284,8 +280,6 @@
         android:textAllCaps="false"
         android:textColor="@color/color_gris_oscuro"
         android:fontFamily="@font/robotobold"
-        android:textSize="19sp"
+        android:textSize="18sp"
         />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
