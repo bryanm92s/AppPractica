@@ -59,8 +59,3 @@ class ProfileAdapter(private val profileList: List<Profile>) : androidx.recycler
 
     }
 }
-
-
-
-
-

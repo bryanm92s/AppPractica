@@ -8,6 +8,7 @@ import android.widget.Toast
 import com.example.apppractica.BestMovies
 import com.example.apppractica.Movies
 import com.example.apppractica.R
+import com.example.apppractica.databinding.ItemHorizontalBinding
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_horizontal.view.*
 import kotlinx.android.synthetic.main.layout_item_view.view.*
@@ -38,34 +39,18 @@ class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : androidx.
   class ViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(
       itemView) {
 
-    val Logo: ImageView = itemView.findViewById(R.id.ivLogo_) as ImageView
-    val title: TextView = itemView.findViewById(R.id.tvtitle_) as TextView
-    val stars: TextView = itemView.findViewById(R.id.tvstars_) as TextView
-
+    val binding=ItemHorizontalBinding.bind(itemView)
 
     fun render(items: BestMovies) {
 
-      Picasso.get().load(items.logo).into(itemView.ivLogo_)
-      stars.text= items.stars.toString()
-      title.text = items.title
+      Picasso.get().load(items.logo).into(binding.ivLogo)
+      binding.tvstars.text= items.stars.toString()
+      binding.tvtitle.text = items.title
 
-      /*itemView.ivLogo.setOnClickListener {
-          Toast.makeText(itemView.ivLogo.context, items.title, Toast.LENGTH_SHORT).show()
-      }*/
-
-      // Gestionar clicks en el cuadro del RecyclerView
 
       itemView.setOnClickListener {
         Toast.makeText(itemView.ivLogo_.context,items.title, Toast.LENGTH_SHORT).show()
 
-        //val context=itemView.ivLogo.context
-
-        //val intent = Intent(itemView.ivLogo.context, MovieDetail::class.java)
-
-        //intent.putExtra("Title", items.title)
-        //intent.putExtra("Cast", items.cast)
-        //itemView.context.startActivity(intent);
-        //itemView.ivLogo.context.startActivity(intent)
       }
     }
   }

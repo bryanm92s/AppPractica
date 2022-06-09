@@ -8,10 +8,11 @@ import androidx.core.util.PatternsCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.apppractica.R
+import com.example.apppractica.databinding.ActivitySignUpBinding
 import com.example.apppractica.db.UserDatabase
 import com.example.apppractica.entity.User
 import com.example.apppractica.viewmodel.LoginViewModel
-import kotlinx.android.synthetic.main.activity_sign_up.*
+
 
 class SignUp : AppCompatActivity() {
 
@@ -20,21 +21,24 @@ class SignUp : AppCompatActivity() {
      * @param isExist  bool parameter Para chequear si el usuario existe o no en la base de datos.
      */
     var isExist = false
+    private lateinit var binding: ActivitySignUpBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        binding=ActivitySignUpBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         //calling view model object
         val userDetailsRepository = ViewModelProvider(this@SignUp).get(LoginViewModel::class.java)
 
 
-        btn_back_login.setOnClickListener {
+        binding.btnBackLogin.setOnClickListener {
             val intent: Intent = Intent(this@SignUp, Login::class.java)
             startActivity(intent)
         }
 
-        btnAceptar.setOnClickListener {
+        binding.btnAceptar.setOnClickListener {
 
             if (validation()) {
                 userDetailsRepository.getGetAllData().observe(this, object : Observer<List<User>> {
@@ -43,7 +47,7 @@ class SignUp : AppCompatActivity() {
 
                         for (i in userObject.indices) {
 
-                            if (userObject[i].name?.equals(textInputEditTextNombre.text.toString())!!) {
+                            if (userObject[i].name?.equals(binding.textInputEditTextNombre.text.toString())!!) {
                                 isExist = true
                                 //Toast.makeText(this@SignUp,"Usuario ya se encuentra registrado", Toast.LENGTH_SHORT).show()
                                 break
@@ -61,9 +65,9 @@ class SignUp : AppCompatActivity() {
                         else {
 
                             val user = User()
-                            user.name = textInputEditTextNombre.text.toString()
-                            user.email = textInputEditTextCorreo.text.toString()
-                            user.password = textInputEditTextContrasena.text.toString()
+                            user.name = binding.textInputEditTextNombre.text.toString()
+                            user.email = binding.textInputEditTextCorreo.text.toString()
+                            user.password = binding.textInputEditTextContrasena.text.toString()
                             val userDatabase = UserDatabase
                             userDatabase.getDatabase(this@SignUp)?.daoAccess()?.insertUserData(user)
                             Toast.makeText(
@@ -74,9 +78,9 @@ class SignUp : AppCompatActivity() {
                                 .show()
 
                             // Limpiar EditText
-                            textInputEditTextNombre.setText("")
-                            textInputEditTextCorreo.setText("")
-                            textInputEditTextContrasena.setText("")
+                            binding.textInputEditTextNombre.setText("")
+                            binding.textInputEditTextCorreo.setText("")
+                            binding.textInputEditTextContrasena.setText("")
 
                             // Enviar al Login
                             val intent: Intent = Intent(this@SignUp, Login::class.java)
@@ -90,25 +94,25 @@ class SignUp : AppCompatActivity() {
         }
     }
     private fun validation(): Boolean {
-        if (textInputEditTextNombre.text.isNullOrEmpty()) {
+        if (binding.textInputEditTextNombre.text.isNullOrEmpty()) {
             Toast.makeText(this@SignUp, "Ingrese el usuario", Toast.LENGTH_SHORT).show()
             return false
         }
 
-        if (textInputEditTextCorreo.text.isNullOrEmpty()) {
+        if (binding.textInputEditTextCorreo.text.isNullOrEmpty()) {
             Toast.makeText(this@SignUp, "Ingrese el correo electrónico", Toast.LENGTH_SHORT).show()
             return false
-        }else if (!PatternsCompat.EMAIL_ADDRESS.matcher(textInputEditTextCorreo.text.toString()).matches()){
+        }else if (!PatternsCompat.EMAIL_ADDRESS.matcher(binding.textInputEditTextCorreo.text.toString()).matches()){
             Toast.makeText(this@SignUp,"Por favor ingrese un correo electrónico válido",Toast.LENGTH_SHORT).show()
             return false
         }
 
-        if (textInputEditTextContrasena.text.isNullOrEmpty()) {
+        if (binding.textInputEditTextContrasena.text.isNullOrEmpty()) {
             Toast.makeText(this@SignUp, "Ingrese la contraseña", Toast.LENGTH_SHORT).show()
             return false
         }
 
-        if (textInputEditTextContrasena.text.toString().length <8) {
+        if (binding.textInputEditTextContrasena.text.toString().length <8) {
             Toast.makeText(this@SignUp, "La contraseña debe tener al menos 8 caracteres", Toast.LENGTH_SHORT).show()
             return false
         }

@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.MovieProvider
 import com.example.apppractica.R
 import com.example.apppractica.adapter.MovieAdapter
+import com.example.apppractica.databinding.FragmentBuscarBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,6 +24,11 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class BuscarFragment : Fragment() {
+
+    private var _binding: FragmentBuscarBinding? = null
+    private val binding get() = _binding!!
+
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -39,30 +45,22 @@ class BuscarFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_buscar, container, false)
-        // Iniciar RecyclerView en un Fragment.
-        // Dentro de onCreateView
+        _binding = FragmentBuscarBinding.inflate(inflater, container,false)
 
-        val recyclerView: RecyclerView = view.findViewById(R.id.movieRecycler) as RecyclerView
-        recyclerView.layoutManager = LinearLayoutManager(view.context)
+        val recyclerView: RecyclerView = binding.movieRecycler as RecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
+
         // Agregar línea divisora
-        val manager=LinearLayoutManager(view.context)
+        val manager=LinearLayoutManager(context)
         val mDividerItemDecoration = DividerItemDecoration(
             recyclerView.context,
             manager.orientation
         )
 
         recyclerView.addItemDecoration(mDividerItemDecoration)
-        return view
+        return binding.root
     }
-
-    // Iniciar RecyclerView en una actividad
-    //val recyclerView = findViewById<RecyclerView>(R.id.movieRecycler)
-    //movieRecycler.layoutManager = LinearLayoutManager(this)
-    //recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
-
 
 
     companion object {

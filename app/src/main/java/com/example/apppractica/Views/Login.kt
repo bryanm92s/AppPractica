@@ -7,10 +7,10 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.apppractica.R
+import com.example.apppractica.databinding.ActivityLoginBinding
 import com.example.apppractica.entity.User
 import com.example.apppractica.viewmodel.LoginViewModel
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_sign_up.*
+
 
 class Login : AppCompatActivity() {
 
@@ -18,15 +18,17 @@ class Login : AppCompatActivity() {
      * @param isExist  bool parameter Para chequear si el usuario existe o no en la base de datos.
      */
     var isExist = false
+    private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         //Llamando el view model
         val userDetailsRepository = ViewModelProvider(this).get(LoginViewModel::class.java)
 
-        btnLogin.setOnClickListener {
+        binding.btnLogin.setOnClickListener {
 
             if (validation()) {
 
@@ -36,9 +38,9 @@ class Login : AppCompatActivity() {
 
                         for (i in userObject.indices) {
 
-                            if (userObject[i].name?.equals(etUser.text.toString())!!) {
+                            if (userObject[i].name?.equals(binding.etUser.text.toString())!!) {
 
-                                if (userObject[i].password?.equals(etPassword.text.toString())!!) {
+                                if (userObject[i].password?.equals(binding.etPassword.text.toString())!!) {
 
                                     val intent = Intent(this@Login, MainActivity::class.java)
                                         .putExtra("UserDetails", userObject[i])
@@ -66,7 +68,7 @@ class Login : AppCompatActivity() {
             }
         }
 
-        btnRegistrate.setOnClickListener {
+        binding.btnRegistrate.setOnClickListener {
             val intent: Intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
@@ -74,17 +76,17 @@ class Login : AppCompatActivity() {
 
     private fun validation(): Boolean {
 
-        if (etUser.text.isNullOrEmpty()) {
+        if (binding.etUser.text.isNullOrEmpty()) {
             Toast.makeText(this@Login, "Ingrese el usuario", Toast.LENGTH_SHORT).show()
             return false
         }
 
-        if (etPassword.text.isNullOrEmpty()) {
+        if (binding.etPassword.text.isNullOrEmpty()) {
             Toast.makeText(this@Login, "Ingrese la contraseña", Toast.LENGTH_SHORT).show()
             return false
         }
 
-        if (etPassword.text.toString().length < 8) {
+        if (binding.etPassword.text.toString().length < 8) {
             Toast.makeText(
                 this@Login,
                 "La contraseña debe tener al menos 8 caracteres",

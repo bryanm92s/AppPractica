@@ -14,14 +14,13 @@ import com.example.apppractica.MovieProvider
 import com.example.apppractica.Movies
 import com.example.apppractica.R
 import com.example.apppractica.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.fragment_inicio.*
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
     private lateinit var binding: ActivityMainBinding
-    private lateinit var movielist: ArrayList<Movies>
-
+    //private lateinit var movielist: ArrayList<Movies>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

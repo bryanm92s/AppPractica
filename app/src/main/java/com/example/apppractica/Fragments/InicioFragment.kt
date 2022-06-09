@@ -13,6 +13,8 @@ import com.example.apppractica.BestMoviesProvider
 import com.example.apppractica.MovieProvider
 import com.example.apppractica.R
 import com.example.apppractica.adapter.MovieAdapter
+import com.example.apppractica.databinding.FragmentBuscarBinding
+import com.example.apppractica.databinding.FragmentInicioBinding
 import com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -26,6 +28,11 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class InicioFragment : Fragment() {
+
+    private var _binding: FragmentInicioBinding? = null
+    private val binding get() = _binding!!
+
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -42,16 +49,13 @@ class InicioFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_inicio, container, false)
-        // Iniciar RecyclerView en un Fragment.
-        // Dentro de onCreateView
+        _binding = FragmentInicioBinding.inflate(inflater, container,false)
 
-        val recyclerView: RecyclerView = view.findViewById<RecyclerView>(R.id.first_recycler_view) as RecyclerView
-        recyclerView.layoutManager = LinearLayoutManager(view.context,LinearLayoutManager.HORIZONTAL, false)
-        //recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
+        val recyclerView: RecyclerView = binding.firstRecyclerView as RecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL, false)
+
         recyclerView.adapter = BestMoviesAdapter(BestMoviesProvider.bestMovieList)
-        return view
+        return binding.root
 
     }
 
@@ -74,25 +78,5 @@ class InicioFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
-
-
-        /*private val SIMPLE_TITLES = arrayOf(
-            "Android",
-            "Beta",
-            "Cupcake",
-            "Donut",
-            "Eclair",
-            "Froyo",
-            "Gingerbread",
-            "Honeycomb",
-            "Ice Cream Sandwich",
-            "Jelly Bean",
-            "KitKat",
-            "Lollipop",
-            "Marshmallow",
-            "Nougat",
-            "Oreo"
-        )*/
-
     }
 }
