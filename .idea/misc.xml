@@ -25,6 +25,8 @@
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/btn_icon_back.xml" value="0.1545" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/btn_icon_next.xml" value="0.151" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/color.xml" value="0.1" />
+        <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/gris_background.xml" value="0.1545" />
+        <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/gris_boton.xml" value="0.1545" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/ic_back.xml" value="0.1545" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.113" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1545" />
@@ -33,7 +35,7 @@
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/drawable/vertical.xml" value="0.1545" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/layout/abc.xml" value="0.1" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/layout/activity_horizontal.xml" value="0.33" />
-        <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/layout/activity_movie_detail.xml" value="0.1" />
         <entry key="..\:/Users/root/Documents/ProjectsAndroidStudio/AppPractica/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
