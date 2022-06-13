@@ -38,10 +38,10 @@
                 android:id="@+id/NombreUsuario"
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="@dimen/margin_start_perfil"
                 android:fontFamily="@font/robotobold"
                 android:textColor="@color/color_negro"
-                android:text="Juan Pérez"
+                tools:text="Juan Pérez"
                 android:textSize="20sp"
                 />
             <ImageView
@@ -74,7 +74,7 @@
                 android:id="@+id/reciclerView_operaciones"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/margin_top_perfil"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_operaciones_horizontal">
@@ -116,7 +116,7 @@
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/margin_top_perfil"
                     android:layout_marginHorizontal="45dp"
                     android:gravity="center_vertical">
                     <TextView
@@ -127,20 +127,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="@dimen/margin_start_perfil"
                         android:fontFamily="@font/robotobold"
                         android:textColor="@color/color_negro"
                         android:textSize="20sp"
-                        android:text="Lista de seguimiento" />
+                        android:text="@string/lista_de_seguimiento" />
                 </LinearLayout>
                 <TextView
                     android:id="@+id/Crea_Una_Lista"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/margin_top_perfil"
                     android:layout_marginHorizontal="45dp"
                     android:paddingEnd="10dp"
-                    android:text="Crea una lista de seguimiento para no perderte ninguna película o serie de tv."
+                    android:text="@string/crea_una_lista_de_seguimiento_para_no_perderte_ninguna_pel_cula_o_serie_de_tv"
                     />
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
@@ -151,7 +151,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/amarillo_background"
-                    android:text="Empieza tu lista de seguimiento"
+                    android:text="@string/empieza_tu_lista_de_seguimiento"
                     android:textAllCaps="false"
                     android:textColor="@color/color_gris_oscuro"
                     android:fontFamily="@font/robotobold"
@@ -193,7 +193,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="45dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/margin_top_perfil"
                     android:gravity="center_vertical">
                     <TextView
                         android:layout_width="8dp"
@@ -203,18 +203,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="@dimen/margin_start_perfil"
                         android:fontFamily="@font/robotobold"
                         android:textColor="@color/color_negro"
                         android:textSize="20sp"
-                        android:text="Vistas recientes" />
+                        android:text="@string/vistas_recientes" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="45dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/margin_top_perfil"
                     android:paddingEnd="15dp"
                     android:text="No has visitado ninguna página recientemente."
                     />
@@ -252,7 +252,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="45dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/margin_top_perfil"
                     android:gravity="center_vertical">
                     <TextView
                         android:layout_width="8dp"
@@ -262,18 +262,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="@dimen/margin_start_perfil"
                         android:fontFamily="@font/robotobold"
                         android:textColor="@color/color_negro"
                         android:textSize="20sp"
-                        android:text="Personas favoritas" />
+                        android:text="@string/personas_favoritas" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="45dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/margin_top_perfil"
                     android:paddingEnd="15dp"
                     android:text="No has agregado ninguna persona recientemente."
                     />

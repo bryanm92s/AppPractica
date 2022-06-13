@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.core.util.PatternsCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.apppractica.R
 import com.example.apppractica.databinding.ActivitySignUpBinding
 import com.example.apppractica.db.UserDatabase
 import com.example.apppractica.entity.User
@@ -86,7 +85,6 @@ class SignUp : AppCompatActivity() {
                             val intent: Intent = Intent(this@SignUp, Login::class.java)
                             startActivity(intent)
 
-                            //isExist = true
                         }
                     }
                 })

@@ -2,17 +2,11 @@
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import com.example.apppractica.BestMovies
-import com.example.apppractica.Movies
 import com.example.apppractica.R
 import com.example.apppractica.databinding.ItemHorizontalBinding
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.item_horizontal.view.*
-import kotlinx.android.synthetic.main.layout_item_view.view.*
-
 
 class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : androidx.recyclerview.widget.RecyclerView.Adapter<BestMoviesAdapter.ViewHolder>() {
 
@@ -24,8 +18,6 @@ class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : androidx.
   }
 
   override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-    //val title = titles[position]
-    //holder.title.text = title
 
     val item = bestMovieList[position]
     holder.render(item)
@@ -47,10 +39,9 @@ class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : androidx.
       binding.tvstars.text= items.stars.toString()
       binding.tvtitle.text = items.title
 
-
-      itemView.setOnClickListener {
-        Toast.makeText(itemView.ivLogo_.context,items.title, Toast.LENGTH_SHORT).show()
-
+      // Gestionar clicks en el cuadro del RecyclerView
+      binding.ivLogo.setOnClickListener {
+        Toast.makeText(binding.ivLogo.context,items.title, Toast.LENGTH_SHORT).show()
       }
     }
   }

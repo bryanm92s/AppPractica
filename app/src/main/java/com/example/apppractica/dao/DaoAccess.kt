@@ -13,11 +13,11 @@ interface DaoAccess {
 
 
     @Insert
-    fun insertUserData(user: User)  //   query is written above for insert all details of user
+    fun insertUserData(user: User)
 
     @Query("select * from User")
-    fun getDetails(): LiveData<List<User>> //   query is written above for fetching all details of user
+    fun getDetails(): LiveData<List<User>>
 
     @Query("DELETE FROM User WHERE id = :id")
-    fun deleteByUserId(id: Long)   //  do it by your own for practise  query is written above
+    fun deleteByUserId(id: Long)
 }

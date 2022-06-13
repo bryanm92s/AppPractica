@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/ivLogo_"
-            android:layout_width="120dp"
-            android:layout_height="160dp"
+            android:layout_width="@dimen/width_item_horizontal"
+            android:layout_height="@dimen/height_item_horizontal"
             android:scaleType="fitXY"
             tools:src="@mipmap/ic_launcher"
             />
@@ -26,10 +26,10 @@
             android:id="@+id/tvstars_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_baseline_stars_24"
-            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_baseline_stars_24"
+            android:layout_marginTop="@dimen/margin_top_item_horizontal"
             android:textColor="@color/color_negro"
-            android:textSize="14sp"
+            android:textSize="@dimen/textSize_item_horizontal"
             />
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_marginTop="6dp"
             android:gravity="center"
             android:textColor="@color/color_negro"
-            android:textSize="14sp"
+            android:textSize="@dimen/textSize_item_horizontal"
             />
 
         <TextView
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="@dimen/margin_top_item_horizontal"
             android:background="@drawable/ic_info" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

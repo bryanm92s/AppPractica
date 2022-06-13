@@ -236,7 +236,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="100dp"
                 android:fontFamily="@font/robotobold"
-                android:text="Guía de episodios"
+                android:text="@string/gu_a_de_episodios"
                 android:textColor="@color/color_negro"
                 android:textSize="16sp"
                 tools:ignore="TextContrastCheck,TextContrastCheck" />
@@ -276,7 +276,7 @@
         android:paddingHorizontal="15dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/amarillo_background"
-        android:text="Agregar a la lista de seguimiento"
+        android:text="@string/agregar_a_la_lista_de_seguimiento"
         android:textAllCaps="false"
         android:textColor="@color/color_gris_oscuro"
         android:fontFamily="@font/robotobold"

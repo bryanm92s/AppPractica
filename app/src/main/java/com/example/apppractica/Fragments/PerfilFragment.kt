@@ -1,25 +1,17 @@
 package com.example.apppractica.Fragments
 
 
-import BestMoviesAdapter
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.apppractica.BestMoviesProvider
-import com.example.apppractica.MovieProvider
-import com.example.apppractica.ProfileProvider
-import com.example.apppractica.R
-import com.example.apppractica.adapter.MovieAdapter
+import com.example.apppractica.ProfileProvider.Companion.profileList
 import com.example.apppractica.adapter.ProfileAdapter
-import com.example.apppractica.databinding.FragmentBuscarBinding
 import com.example.apppractica.databinding.FragmentPerfilBinding
-import com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -38,6 +30,7 @@ class PerfilFragment : Fragment() {
 
     private var _binding: FragmentPerfilBinding? = null
     private val binding get() = _binding!!
+    private var perfilAdapter: ProfileAdapter? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,10 +47,11 @@ class PerfilFragment : Fragment() {
     ): View? {
         _binding = FragmentPerfilBinding.inflate(inflater, container,false)
 
-        val recyclerView: RecyclerView = binding.reciclerViewOperaciones as RecyclerView
+        val recyclerView: RecyclerView = binding.reciclerViewOperaciones
         recyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL, false)
+        perfilAdapter = ProfileAdapter(profileList)
+        recyclerView.adapter = perfilAdapter
 
-        recyclerView.adapter = ProfileAdapter(ProfileProvider.profileList)
         return binding.root
 
     }

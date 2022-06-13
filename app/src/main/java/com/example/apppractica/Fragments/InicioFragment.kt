@@ -9,13 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.apppractica.BestMoviesProvider
-import com.example.apppractica.MovieProvider
-import com.example.apppractica.R
-import com.example.apppractica.adapter.MovieAdapter
-import com.example.apppractica.databinding.FragmentBuscarBinding
+import com.example.apppractica.BestMoviesProvider.Companion.bestMovieList
 import com.example.apppractica.databinding.FragmentInicioBinding
-import com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,6 +27,7 @@ class InicioFragment : Fragment() {
 
     private var _binding: FragmentInicioBinding? = null
     private val binding get() = _binding!!
+    private var bestAdapter: BestMoviesAdapter? = null
 
 
     // TODO: Rename and change types of parameters
@@ -51,10 +48,11 @@ class InicioFragment : Fragment() {
     ): View? {
         _binding = FragmentInicioBinding.inflate(inflater, container,false)
 
-        val recyclerView: RecyclerView = binding.firstRecyclerView as RecyclerView
+        val recyclerView: RecyclerView = binding.firstRecyclerView
         recyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL, false)
+        bestAdapter = BestMoviesAdapter(bestMovieList)
+        recyclerView.adapter = bestAdapter
 
-        recyclerView.adapter = BestMoviesAdapter(BestMoviesProvider.bestMovieList)
         return binding.root
 
     }

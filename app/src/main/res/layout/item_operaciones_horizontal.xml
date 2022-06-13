@@ -5,8 +5,8 @@
     android:orientation="horizontal"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
+    android:layout_marginLeft="@dimen/marginleftright_horizontal"
+    android:layout_marginRight="@dimen/marginleftright_horizontal"
     app:cardUseCompatPadding="true"
     >
 
@@ -17,18 +17,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="16dp"
+        android:padding="@dimen/padding_horizontal"
         >
 
         <TextView
             android:id="@+id/descripcion"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/width_horizontal"
+            android:layout_height="@dimen/height_horizontal"
             android:background="@color/fragment_bg_color"
             android:fontFamily="@font/robotobold"
             android:padding="6dp"
             android:textColor="@color/color_gris_oscuro"
-            android:textSize="12sp"
+            android:textSize="@dimen/textSizeTexto_horizontal"
             tools:text="Calificar y obtener recomendaciones">
         </TextView>
 
@@ -40,7 +40,7 @@
             android:layout_marginTop="2dp"
             android:fontFamily="@font/robotobold"
             android:textColor="@color/color_gris_claro"
-            android:textSize="12sp"
+            android:textSize="@dimen/textSizeTexto_horizontal"
             tools:text="Calificaciones">
         </TextView>
 
@@ -51,7 +51,5 @@
             tools:text="0">
         </TextView>
 
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

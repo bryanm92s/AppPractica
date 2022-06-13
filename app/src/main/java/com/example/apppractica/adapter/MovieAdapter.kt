@@ -3,18 +3,11 @@ package com.example.apppractica.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
-import androidx.recyclerview.widget.RecyclerView
-import com.example.apppractica.BestMovies
 import com.example.apppractica.Movies
 import com.example.apppractica.R
-import com.example.apppractica.databinding.ItemHorizontalBinding
 import com.example.apppractica.databinding.LayoutItemViewBinding
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.item_horizontal.view.*
-import kotlinx.android.synthetic.main.layout_item_view.view.*
 
 class MovieAdapter(private val movieList: List<Movies>) : androidx.recyclerview.widget.RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
@@ -48,13 +41,9 @@ class MovieAdapter(private val movieList: List<Movies>) : androidx.recyclerview.
             binding.tvMovieCast.text=items.cast
 
             // Gestionar clicks en el cuadro del RecyclerView
-
-            itemView.setOnClickListener {
-                Toast.makeText(itemView.ivLogo.context,items.title, Toast.LENGTH_SHORT).show()
-
+            binding.ivLogo.setOnClickListener {
+                Toast.makeText(binding.ivLogo.context,items.title, Toast.LENGTH_SHORT).show()
             }
-
         }
-
     }
 }

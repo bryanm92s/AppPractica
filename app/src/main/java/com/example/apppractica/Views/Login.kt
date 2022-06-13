@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.apppractica.R
 import com.example.apppractica.databinding.ActivityLoginBinding
 import com.example.apppractica.entity.User
 import com.example.apppractica.viewmodel.LoginViewModel

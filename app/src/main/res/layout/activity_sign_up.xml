@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="16dp"
-                android:text="Crear una cuenta"
+                android:text="@string/crear_una_cuenta"
                 android:textColor="@color/color_gris_oscuro"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -136,7 +136,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="32dp"
                 android:fontFamily="@font/robotolightitalic"
-                android:text="La contraseña debe contener 8 caracteres"
+                android:text="@string/la_contrase_a_debe_contener_8_caracteres"
                 android:textColor="@color/color_gris_claro"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -155,7 +155,7 @@
                     android:id="@+id/tvAceptar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptar"
+                    android:text="@string/aceptar"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/color_blanco"

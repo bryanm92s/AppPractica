@@ -6,12 +6,6 @@ import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.apppractica.adapter.MovieAdapter
-import com.example.apppractica.MovieProvider
-import com.example.apppractica.Movies
 import com.example.apppractica.R
 import com.example.apppractica.databinding.ActivityMainBinding
 

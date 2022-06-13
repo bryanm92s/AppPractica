@@ -45,7 +45,8 @@
                             android:layout_width="120dp"
                             android:layout_height="150dp"
                             android:layout_marginStart="40dp"
-                            android:src="@drawable/strangersthings"></ImageView>
+                            android:src="@drawable/strangersthings">
+                        </ImageView>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -59,7 +60,8 @@
                                 android:text="@string/stranger_things"
                                 android:textColor="@color/color_negro"
                                 android:textSize="20sp"
-                                android:textStyle="bold"></TextView>
+                                android:textStyle="bold">
+                            </TextView>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -67,7 +69,6 @@
                                 android:layout_marginStart="20dp"
                                 android:text="@string/trailer_oficial"
                                 android:textSize="14sp">
-
                             </TextView>
                         </LinearLayout>
                     </LinearLayout>
@@ -99,7 +100,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="4dp"
                         android:fontFamily="@font/robotobold"
-                        android:text="Las mejores selecciones"
+                        android:text="@string/las_mejores_selecciones"
                         android:textColor="@color/color_negro"
                         android:textSize="20sp" />
 

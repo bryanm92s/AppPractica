@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
-                android:text="Usuario"
+                android:text="@string/usuario"
                 android:textColor="@color/color_gris_oscuro"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
-                android:text="Contraseña"
+                android:text="@string/contrase_a"
                 android:textColor="@color/color_gris_oscuro"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -89,7 +89,7 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="32dp"
                 android:fontFamily="@font/robotoregular"
-                android:text="¿Olvidaste la contraseña?"
+                android:text="@string/olvidaste_la_contrase_a"
                 android:textColor="@color/color_gris_claro"
                 android:textSize="17sp" />
 
@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/robotolightitalic"
-                android:text="Ó podes ingresar con"
+                android:text="@string/podes_ingresar_con"
                 android:textAlignment="center"
                 android:textSize="20sp" />
 
@@ -169,7 +169,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/robotolightitalic"
-                    android:text="¿No tienes cuenta?"
+                    android:text="@string/no_tienes_cuenta"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -177,7 +177,7 @@
                     android:id="@+id/btnRegistrate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regístrate"
+                    android:text="@string/reg_strate"
                     android:textAllCaps="false"
                     android:textColor="@color/color_negro"
                     android:fontFamily="@font/robotolightitalic"
@@ -194,7 +194,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/robotobold"
-                android:text="Continuar como Invitado"
+                android:text="@string/continuar_como_invitado"
                 android:textAlignment="center"
                 android:textColor="@color/color_negro"
                 android:textSize="20sp" />

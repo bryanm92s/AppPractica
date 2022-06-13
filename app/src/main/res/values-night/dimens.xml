@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_heigth">150dp</dimen>
+    <dimen name="start_top">8dp</dimen>
+    <dimen name="titulo">22sp</dimen>
+    <dimen name="start">10dp</dimen>
+    <dimen name="padding_layoutitemview">10dp</dimen>
+    <dimen name="marginleftright_horizontal">8dp</dimen>
+    <dimen name="padding_horizontal">16dp</dimen>
+    <dimen name="width_horizontal">150dp</dimen>
+    <dimen name="textSizeStars_item_horizontal">14sp</dimen>
+    <dimen name="margin_top_item_horizontal">4dp</dimen>
+</resources>

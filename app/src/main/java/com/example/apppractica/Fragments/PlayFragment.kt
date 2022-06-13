@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.apppractica.R
-import com.example.apppractica.databinding.FragmentMovieDetailsBinding
 import com.example.apppractica.databinding.FragmentPlayBinding
 
 // TODO: Rename parameter arguments, choose names that match

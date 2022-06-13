@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.apppractica.MovieProvider
-import com.example.apppractica.R
+import com.example.apppractica.MovieProvider.Companion.movieList
 import com.example.apppractica.adapter.MovieAdapter
 import com.example.apppractica.databinding.FragmentBuscarBinding
 
@@ -27,7 +26,7 @@ class BuscarFragment : Fragment() {
 
     private var _binding: FragmentBuscarBinding? = null
     private val binding get() = _binding!!
-
+    private var movieAdapter: MovieAdapter? = null
 
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -47,9 +46,10 @@ class BuscarFragment : Fragment() {
     ): View? {
         _binding = FragmentBuscarBinding.inflate(inflater, container,false)
 
-        val recyclerView: RecyclerView = binding.movieRecycler as RecyclerView
+        val recyclerView: RecyclerView = binding.movieRecycler
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
+        movieAdapter = MovieAdapter(movieList)
+        recyclerView.adapter = movieAdapter
 
         // Agregar línea divisora
         val manager=LinearLayoutManager(context)
@@ -59,6 +59,7 @@ class BuscarFragment : Fragment() {
         )
 
         recyclerView.addItemDecoration(mDividerItemDecoration)
+
         return binding.root
     }
 

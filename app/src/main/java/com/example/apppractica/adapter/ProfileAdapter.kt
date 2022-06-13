@@ -7,19 +7,15 @@ import android.widget.Toast
 import com.example.apppractica.Profile
 import com.example.apppractica.R
 import com.example.apppractica.databinding.ItemOperacionesHorizontalBinding
-import kotlinx.android.synthetic.main.item_operaciones_horizontal.view.*
-import kotlinx.android.synthetic.main.layout_item_view.view.*
 
 
 class ProfileAdapter(private val profileList: List<Profile>) : androidx.recyclerview.widget.RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         val layoutInflater = LayoutInflater.from(parent.context)
         return ViewHolder(layoutInflater.inflate(R.layout.item_operaciones_horizontal,parent, false))
     }
-
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
@@ -43,13 +39,9 @@ class ProfileAdapter(private val profileList: List<Profile>) : androidx.recycler
             binding.cantidad.text= items.cantidad.toString()
 
             // Gestionar clicks en el cuadro del RecyclerView
-
-            itemView.setOnClickListener {
-                Toast.makeText(itemView.descripcion.context,items.descripcion, Toast.LENGTH_SHORT).show()
-
+            binding.descripcion.setOnClickListener {
+                Toast.makeText(binding.descripcion.context,items.descripcion, Toast.LENGTH_SHORT).show()
             }
-
         }
-
     }
 }
