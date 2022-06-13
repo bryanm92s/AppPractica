@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
     private lateinit var binding: ActivityMainBinding
-    //private lateinit var movielist: ArrayList<Movies>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,36 +28,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // -- Init Recycler
-        // llamar a la función initRecyclerView()
-
-        // Iniciar NavigationBottom con binding
-
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.mainContainer) as NavHostFragment
         val navController = navHostFragment.navController
         val bottomNavigationView = binding.bottomNavigationView
+
         // Sincronización del navController con nuestro bottom navigation
         bottomNavigationView.setupWithNavController(navController)
-
-
-        // Iniciar NavigationBottom con R.id
-
-        //val navHostFragment = supportFragmentManager.findFragmentById(R.id.mainContainer) as NavHostFragment
-        //navController = navHostFragment.navController
-        //val bottomNavigationView=findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        //setupWithNavController(bottomNavigationView,navController)
-
     }
-
-
-    // -- Función para iniciar RecyclerView
-
-    /*private fun initRecyclerView(){
-        val recyclerView = findViewById<RecyclerView>(R.id.movieRecycler)
-        movieRecycler.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = MovieAdapter(MovieProvider.movieList)
-
-    }*/
-
 }
