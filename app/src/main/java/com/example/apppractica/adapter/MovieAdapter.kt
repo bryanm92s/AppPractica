@@ -4,19 +4,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.Movies
 import com.example.apppractica.R
+import com.example.apppractica.databinding.ItemHorizontalBinding
 import com.example.apppractica.databinding.LayoutItemViewBinding
 import com.squareup.picasso.Picasso
 
 class MovieAdapter(private val movieList: List<Movies>) : androidx.recyclerview.widget.RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-
-        val layoutInflater = LayoutInflater.from(parent.context)
-        return ViewHolder(layoutInflater.inflate(R.layout.layout_item_view,parent, false))
+        return ViewHolder(
+            LayoutItemViewBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
-
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
@@ -28,10 +34,7 @@ class MovieAdapter(private val movieList: List<Movies>) : androidx.recyclerview.
     // Tamaño de la lista
     override fun getItemCount(): Int =  movieList.size
 
-    class ViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(
-        itemView) {
-
-        val binding= LayoutItemViewBinding.bind(itemView)
+    inner class ViewHolder( val binding: LayoutItemViewBinding) : RecyclerView.ViewHolder(binding.root){
 
         fun bind(items: Movies) {
 
