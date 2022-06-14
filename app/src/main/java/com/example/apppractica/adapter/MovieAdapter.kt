@@ -21,7 +21,7 @@ class MovieAdapter(private val movieList: List<Movies>) : androidx.recyclerview.
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val item = movieList[position]
-        holder.render(item)
+        holder.bind(item)
 
     }
 
@@ -33,7 +33,7 @@ class MovieAdapter(private val movieList: List<Movies>) : androidx.recyclerview.
 
         val binding= LayoutItemViewBinding.bind(itemView)
 
-        fun render(items: Movies) {
+        fun bind(items: Movies) {
 
             Picasso.get().load(items.logo).into(binding.ivLogo)
             binding.tvMovieTitle.text = items.title

@@ -20,7 +20,7 @@ class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : androidx.
   override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
     val item = bestMovieList[position]
-    holder.render(item)
+    holder.bind(item)
 
   }
 
@@ -33,7 +33,7 @@ class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : androidx.
 
     val binding=ItemHorizontalBinding.bind(itemView)
 
-    fun render(items: BestMovies) {
+    fun bind(items: BestMovies) {
 
       Picasso.get().load(items.logo).into(binding.ivLogo)
       binding.tvstars.text= items.stars.toString()

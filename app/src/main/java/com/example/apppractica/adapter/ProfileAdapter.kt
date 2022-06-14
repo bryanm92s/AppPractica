@@ -20,7 +20,7 @@ class ProfileAdapter(private val profileList: List<Profile>) : androidx.recycler
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val item = profileList[position]
-        holder.render(item)
+        holder.bind(item)
     }
 
     // Tamaño de la lista
@@ -32,7 +32,7 @@ class ProfileAdapter(private val profileList: List<Profile>) : androidx.recycler
         val binding = ItemOperacionesHorizontalBinding.bind(itemView)
 
 
-        fun render(items: Profile) {
+        fun bind(items: Profile) {
 
             binding.descripcion.text=items.descripcion
             binding.titulo.text=items.titulo
