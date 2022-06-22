@@ -26,14 +26,14 @@
                 android:id="@+id/imvLogo"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="@dimen/margin_login"
                 app:srcCompat="@drawable/imdb" />
 
             <TextView
                 android:id="@+id/tvUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="@dimen/margin_login"
                 android:layout_marginTop="16dp"
                 android:text="@string/usuario"
                 android:textColor="@color/color_gris_oscuro"
@@ -44,9 +44,9 @@
                 android:id="@+id/etUser"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="@dimen/margin_login"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="@dimen/margin_login"
                 android:background="@drawable/background_edt"
                 android:ems="10"
                 android:fontFamily="@font/robotolightitalic"
@@ -59,7 +59,7 @@
                 android:id="@+id/tvPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="@dimen/margin_login"
                 android:layout_marginTop="16dp"
                 android:text="@string/contrase_a"
                 android:textColor="@color/color_gris_oscuro"
@@ -70,9 +70,9 @@
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="@dimen/margin_login"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="@dimen/margin_login"
                 android:background="@drawable/background_edt"
                 android:ems="10"
                 android:fontFamily="@font/robotolightitalic"
@@ -85,9 +85,9 @@
                 android:id="@+id/tvOlvidaste"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="@dimen/margin_login"
                 android:layout_marginTop="2dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="@dimen/margin_login"
                 android:fontFamily="@font/robotoregular"
                 android:text="@string/olvidaste_la_contrase_a"
                 android:textColor="@color/color_gris_claro"
@@ -98,9 +98,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginStart="32dp"
+                android:layout_marginStart="@dimen/margin_login"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="@dimen/margin_login"
                 android:background="@drawable/gris_boton">
 
                 <TextView
@@ -134,8 +134,8 @@
 
                 <ImageView
                     android:id="@+id/imvApple"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/width_img_login"
+                    android:layout_height="@dimen/height_img_login"
                     android:layout_weight="1"
                     android:layout_marginLeft="100dp"
                     android:contentDescription="Apple"
@@ -143,16 +143,16 @@
 
                 <ImageView
                     android:id="@+id/imvFacebook"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/width_img_login"
+                    android:layout_height="@dimen/height_img_login"
                     android:layout_weight="1"
                     android:contentDescription="Facebook"
                     app:srcCompat="@drawable/facebook_circle" />
 
                 <ImageView
                     android:id="@+id/imvGoogle"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/width_img_login"
+                    android:layout_height="@dimen/height_img_login"
                     android:layout_weight="1"
                     android:layout_marginRight="100dp"
                     android:contentDescription="Google"

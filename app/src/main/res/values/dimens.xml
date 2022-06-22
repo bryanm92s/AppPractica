@@ -21,4 +21,8 @@
     <dimen name="margin_start_perfil">10dp</dimen>
     <dimen name="margin_top_perfil">10dp</dimen>
 
+    <dimen name="margin_login">32dp</dimen>
+    <dimen name="width_img_login">50dp</dimen>
+    <dimen name="height_img_login">50dp</dimen>
+
 </resources>

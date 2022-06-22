@@ -1,23 +1,13 @@
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.BestMovies
-import com.example.apppractica.R
 import com.example.apppractica.databinding.ItemHorizontalBinding
 import com.squareup.picasso.Picasso
 
-class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : androidx.recyclerview.widget.RecyclerView.Adapter<BestMoviesAdapter.ViewHolder>() {
-
-
-  /*override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-    val inflater = LayoutInflater.from(viewGroup.context)
-    val view = inflater.inflate(R.layout.item_horizontal, viewGroup, false)
-    return ViewHolder(view)
-  }*/
-
+class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : RecyclerView.Adapter<BestMoviesAdapter.ViewHolder>() {
 
   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
     return ViewHolder(

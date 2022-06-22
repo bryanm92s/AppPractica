@@ -6,14 +6,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.Profile
-import com.example.apppractica.R
-import com.example.apppractica.databinding.ItemHorizontalBinding
 import com.example.apppractica.databinding.ItemOperacionesHorizontalBinding
-import com.example.apppractica.databinding.LayoutItemViewBinding
 
-
-class ProfileAdapter(private val profileList: List<Profile>) : androidx.recyclerview.widget.RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
-
+class ProfileAdapter(private val profileList: List<Profile>) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
@@ -24,7 +19,6 @@ class ProfileAdapter(private val profileList: List<Profile>) : androidx.recycler
             )
         )
     }
-
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 

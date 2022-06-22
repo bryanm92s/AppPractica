@@ -15,8 +15,7 @@
         app:layout_constraintEnd_toStartOf="@id/titulo_ppal"
         app:layout_constraintHorizontal_bias="0.20"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/titulo_ppal"
@@ -32,7 +31,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck,TextContrastCheck"
         tools:text="Queens Gambit" />
     <TextView
         android:id="@+id/divisor_uno"
@@ -80,7 +78,6 @@
                 android:fontFamily="@font/robotobold"
                 android:textColor="@color/color_negro"
                 android:textSize="25sp"
-                tools:ignore="TextContrastCheck,TextContrastCheck"
                 tools:text="Gambito de Dama" />
         </LinearLayout>
 
@@ -200,7 +197,6 @@
                 android:fontFamily="@font/robotobold"
                 android:textColor="@color/color_gris_oscuro"
                 android:textSize="16sp"
-                tools:ignore="TextContrastCheck,TextContrastCheck"
                 tools:text="@tools:sample/lorem/random" />
 
         </LinearLayout>
@@ -238,8 +234,7 @@
                 android:fontFamily="@font/robotobold"
                 android:text="@string/gu_a_de_episodios"
                 android:textColor="@color/color_negro"
-                android:textSize="16sp"
-                tools:ignore="TextContrastCheck,TextContrastCheck" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/cantidad_capitulos"
@@ -247,14 +242,12 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/color_gris_claro"
                 android:textSize="12sp"
-                tools:ignore="SmallSp"
                 tools:text="7 episodios" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:background="@drawable/btn_icon_next"
-                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                android:background="@drawable/btn_icon_next" />
         </LinearLayout>
 
         <TextView

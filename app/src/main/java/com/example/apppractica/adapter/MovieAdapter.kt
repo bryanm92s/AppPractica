@@ -1,18 +1,14 @@
 package com.example.apppractica.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.Movies
-import com.example.apppractica.R
-import com.example.apppractica.databinding.ItemHorizontalBinding
 import com.example.apppractica.databinding.LayoutItemViewBinding
 import com.squareup.picasso.Picasso
 
-class MovieAdapter(private val movieList: List<Movies>) : androidx.recyclerview.widget.RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
-
+class MovieAdapter(private val movieList: List<Movies>) : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(

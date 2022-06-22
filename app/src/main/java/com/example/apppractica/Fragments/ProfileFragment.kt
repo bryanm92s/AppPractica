@@ -1,7 +1,6 @@
 package com.example.apppractica.Fragments
 
 
-import BestMoviesAdapter
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,31 +8,29 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.apppractica.BestMoviesProvider.Companion.bestMovieList
-import com.example.apppractica.databinding.FragmentInicioBinding
+import com.example.apppractica.ProfileProvider.Companion.profileList
+import com.example.apppractica.adapter.ProfileAdapter
+import com.example.apppractica.databinding.FragmentProfileBinding
 
 /**
  * A simple [Fragment] subclass.
- * Use the [InicioFragment.newInstance] factory method to
+ * Use the [ProfileFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class InicioFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
-    private var _binding: FragmentInicioBinding? = null
+    private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
-    private var bestAdapter: BestMoviesAdapter? = null
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentInicioBinding.inflate(inflater, container,false)
+        _binding = FragmentProfileBinding.inflate(inflater, container,false)
 
-        val recyclerView: RecyclerView = binding.firstRecyclerView
+        val recyclerView: RecyclerView = binding.reciclerViewOperaciones
         recyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL, false)
-        bestAdapter = BestMoviesAdapter(bestMovieList)
-        recyclerView.adapter = bestAdapter
+        recyclerView.adapter = ProfileAdapter(profileList)
 
         return binding.root
 

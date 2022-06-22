@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/inicioFragment"
+        android:id="@+id/homeFragment"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Inicio" />
     <item
-        android:id="@+id/buscarFragment"
+        android:id="@+id/searchFragment"
         android:icon="@drawable/ic_baseline_search_24"
         android:title="Buscar" />
     <item
@@ -14,7 +14,7 @@
         android:icon="@drawable/ic_baseline_play_circle_filled_24"
         android:title="Play" />
     <item
-        android:id="@+id/perfilFragment"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_baseline_account_circle_24"
         android:title="Perfil" />
 </menu>
