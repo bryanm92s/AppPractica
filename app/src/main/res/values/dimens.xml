@@ -14,7 +14,7 @@
     <dimen name="textSizeTexto_horizontal">12sp</dimen>
 
     <dimen name="width_item_horizontal">120dp</dimen>
-    <dimen name="height_item_horizontal">160dp</dimen>
+    <dimen name="height_item_horizontal">140dp</dimen>
     <dimen name="textSize_item_horizontal">14sp</dimen>
     <dimen name="margin_top_item_horizontal">4dp</dimen>
 
