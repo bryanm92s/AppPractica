@@ -52,4 +52,14 @@
     <dimen name="layout_height_home">25dp</dimen>
     <dimen name="margin_start_end_home">20dp</dimen>
 
+
+
+    <dimen name="layout_width_moviedetails">40dp</dimen>
+    <dimen name="layout_height_moviedetails">40dp</dimen>
+    <dimen name="layout__marginStart_moviedetails">40dp</dimen>
+    <dimen name="layout_marginEnd_moviedetails">40dp</dimen>
+    <dimen name="textSize_moviedetails">25dp</dimen>
+
+
+
 </resources>
