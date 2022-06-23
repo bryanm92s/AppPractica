@@ -20,4 +20,5 @@
     <string name="empieza_tu_lista_de_seguimiento">Empieza tu lista de seguimiento</string>
     <string name="vistas_recientes">Vistas recientes</string>
     <string name="personas_favoritas">Personas favoritas</string>
+    <string name="no_has_agregado_ninguna_persona_recientemente">No has agregado ninguna persona recientemente.</string>
 </resources>

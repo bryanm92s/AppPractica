@@ -4,92 +4,251 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragments.BlankFragment">
+    tools:context=".Fragments.ProfileFragment">
 
-    <ImageView
-        android:id="@+id/strangers"
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:src="@drawable/strangers"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </ImageView>
-
-    <ImageView
-        android:id="@+id/strangersthings"
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:src="@drawable/strangersthings"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344">
-    </ImageView>
+        app:layout_constraintVertical_bias="0.05"
+        app:shapeAppearance="@style/ImagenRedondeada" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/stranger_things"
-        android:textColor="@color/color_negro"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.645"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/strangers">
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/trailer_oficial"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0">
-    </TextView>
-
-    <TextView
-        android:layout_width="8dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintTop_toBottomOf="@+id/strangersthings">
-    </TextView>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/NombreUsuario"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
         android:fontFamily="@font/robotobold"
-        android:text="@string/las_mejores_selecciones"
         android:textColor="@color/color_negro"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/Configuracion"
         app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+        tools:layout_editor_absoluteY="48dp"
+        tools:text="Juan Pérez" />
+
+    <ImageView
+        android:id="@+id/Configuracion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/line_one"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/color_gris_claro"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/strangersthings"
-        app:layout_constraintVertical_bias="0.082">
+        tools:layout_editor_absoluteY="108dp">
     </TextView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/firstRecyclerView"
+        android:id="@+id/reciclerView_operaciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.2">
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_one"
+        tools:listitem="@layout/item_operaciones_horizontal">
     </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/separator_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fragment_bg_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reciclerView_operaciones"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/vertical_one"
+        android:layout_width="8dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/vertical"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator_one" />
+
+    <TextView
+        android:id="@+id/txt_listadeseg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/lista_de_seguimiento"
+        android:textColor="@color/color_negro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/vertical_one"
+        app:layout_constraintTop_toBottomOf="@+id/separator_one"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/txtcrea_lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/crea_una_lista_de_seguimiento_para_no_perderte_ninguna_pel_cula_o_serie_de_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_listadeseg" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnempiezatulista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/amarillo_background"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/empieza_tu_lista_de_seguimiento"
+        android:textAllCaps="false"
+        android:textColor="@color/color_gris_oscuro"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcrea_lista"
+        app:layout_constraintVertical_bias="0.012">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/txtseparator_two"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/fragment_bg_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnempiezatulista"
+        app:layout_constraintVertical_bias="0.1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/vertical_two"
+        android:layout_width="8dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/vertical"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtseparator_two"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/txt_vistasrec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/vistas_recientes"
+        android:textColor="@color/color_negro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/vertical_two"
+        app:layout_constraintTop_toBottomOf="@+id/txtseparator_two"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_nohasvisitad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/no_has_visitado_ninguna_p_gina_recientemente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vistasrec" />
+
+    <TextView
+        android:id="@+id/txtseparator_three"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/fragment_bg_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nohasvisitad"
+        app:layout_constraintVertical_bias="0.1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/vertical_two6"
+        android:layout_width="8dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/vertical"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtseparator_three" />
+
+    <TextView
+        android:id="@+id/txtPersonasFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/personas_favoritas"
+        android:textColor="@color/color_negro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vertical_two6"
+        app:layout_constraintTop_toBottomOf="@+id/txtseparator_three"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/txt_nohasvisitad__"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/no_has_agregado_ninguna_persona_recientemente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPersonasFav" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,12 +7,12 @@
     <dimen name="reparto_layoutitemview">16sp</dimen>
     <dimen name="start_layoutitemview">10dp</dimen>
     <dimen name="padding_layoutitemview">10dp</dimen>
+
     <dimen name="marginleftright_horizontal">8dp</dimen>
     <dimen name="padding_horizontal">16dp</dimen>
     <dimen name="width_horizontal">150dp</dimen>
     <dimen name="height_horizontal">100dp</dimen>
     <dimen name="textSizeTexto_horizontal">12sp</dimen>
-
     <dimen name="width_item_horizontal">120dp</dimen>
     <dimen name="height_item_horizontal">140dp</dimen>
     <dimen name="textSize_item_horizontal">14sp</dimen>
@@ -24,5 +24,32 @@
     <dimen name="margin_login">32dp</dimen>
     <dimen name="width_img_login">50dp</dimen>
     <dimen name="height_img_login">50dp</dimen>
+
+    <dimen name="margin_top_profile">10dp</dimen>
+    <dimen name="margin_start_profile">30dp</dimen>
+    <dimen name="margin_end_profile">30dp</dimen>
+    <dimen name="margin_top__profile">20dp</dimen>
+    <dimen name="margin_horizontal_profile">45dp</dimen>
+    <dimen name="subtitulos_profile">14sp</dimen>
+    <dimen name="textsize_vertical_profile">25sp</dimen>
+    <dimen name="layout_width_nombre_usuario_profile">130dp</dimen>
+    <dimen name="layout_height_nombre_usuario_profile">30dp</dimen>
+    <dimen name="textsize_titulos_profile">20sp</dimen>
+    <dimen name="dimen_configuration_profile">30dp</dimen>
+    <dimen name="layout_height_separator_profile">10dp</dimen>
+    <dimen name="layout_marginTop_titulos_profile">12dp</dimen>
+    <dimen name="layout_marginBottom_profile">120dp</dimen>
+    <dimen name="layout_marginStartFav_profile">12dp</dimen>
+    <dimen name="layout_marginTopFav_profile">16dp</dimen>
+    <dimen name="layout_width_vertical_profile">8dp</dimen>
+    <dimen name="layout_height_vertical_profile">30dp</dimen>
+    <dimen name="layout_marginTop_vertical_profile">16dp</dimen>
+    <dimen name="layout_width_profile">50dp</dimen>
+    <dimen name="layout_height_profile">50dp</dimen>
+
+    <dimen name="titulos_home">20sp</dimen>
+    <dimen name="subtitulos_home">14sp</dimen>
+    <dimen name="layout_height_home">25dp</dimen>
+    <dimen name="margin_start_end_home">20dp</dimen>
 
 </resources>
