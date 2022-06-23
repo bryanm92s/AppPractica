@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/strangers"
         android:layout_width="0dp"
-        android:layout_height="280dp"
+        android:layout_height="240dp"
         android:src="@drawable/strangers"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.0"
@@ -18,29 +18,39 @@
     </ImageView>
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_play_circle_outline_24"
+        app:layout_constraintBottom_toBottomOf="@+id/strangers"
+        app:layout_constraintEnd_toEndOf="@+id/strangers"
+        app:layout_constraintStart_toStartOf="@+id/strangers"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/strangersthings"
         android:layout_width="120dp"
         android:layout_height="150dp"
         android:src="@drawable/strangersthings"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintVertical_bias="0.4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
     </ImageView>
 
     <TextView
         android:id="@+id/tvtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="12dp"
         android:text="@string/stranger_things"
         android:textColor="@color/color_negro"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/strangersthings"
         app:layout_constraintTop_toBottomOf="@+id/strangers">
     </TextView>
@@ -49,12 +59,12 @@
         android:id="@+id/tvtrailer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="@string/trailer_oficial"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/robotoregular"
+        android:text="@string/trailer_oficial"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toEndOf="@+id/strangersthings"
         app:layout_constraintTop_toBottomOf="@+id/tvtitle">
     </TextView>
