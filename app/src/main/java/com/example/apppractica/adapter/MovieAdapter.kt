@@ -21,13 +21,10 @@ class MovieAdapter(private val movieList: List<Movies>) : RecyclerView.Adapter<M
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
         val item = movieList[position]
         holder.bind(item)
-
     }
 
-    // Tamaño de la lista
     override fun getItemCount(): Int =  movieList.size
 
     inner class ViewHolder( val binding: LayoutItemViewBinding) : RecyclerView.ViewHolder(binding.root){

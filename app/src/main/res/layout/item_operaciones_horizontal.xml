@@ -21,7 +21,7 @@
         >
 
         <TextView
-            android:id="@+id/descripcion"
+            android:id="@+id/description"
             android:layout_width="@dimen/width_horizontal"
             android:layout_height="@dimen/height_horizontal"
             android:background="@color/fragment_bg_color"
@@ -34,7 +34,7 @@
 
 
         <TextView
-            android:id="@+id/titulo"
+            android:id="@+id/title_profile"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="2dp"
@@ -45,7 +45,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/cantidad"
+            android:id="@+id/quantity"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             tools:text="0">

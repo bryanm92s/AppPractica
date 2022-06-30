@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="big_padding">32dp</dimen>
+
+
     <dimen name="width_heigth_layoutitemview">150dp</dimen>
     <dimen name="start_top_layoutitemview">8dp</dimen>
     <dimen name="titulo_layoutitemview">22sp</dimen>
@@ -58,8 +63,15 @@
     <dimen name="layout_height_moviedetails">40dp</dimen>
     <dimen name="layout__marginStart_moviedetails">40dp</dimen>
     <dimen name="layout_marginEnd_moviedetails">40dp</dimen>
-    <dimen name="textSize_moviedetails">25dp</dimen>
+    <dimen name="textSize_moviedetails">25sp</dimen>
 
 
+    <dimen name="layout_marginStart_register">60dp</dimen>
+    <dimen name="layout_marginTop_register">16dp</dimen>
+    <dimen name="layout_marginEnd_register">32dp</dimen>
+    <dimen name="boxCornerRadiusBottomEnd_register">10dp</dimen>
+    <dimen name="boxCornerRadiusTopEnd_register">10dp</dimen>
+    <dimen name="boxCornerRadiusBottomStart_register">10dp</dimen>
+    <dimen name="boxCornerRadiusTopStart_register">10dp</dimen>
 
 </resources>

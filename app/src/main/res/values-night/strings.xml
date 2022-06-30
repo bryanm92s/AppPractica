@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">APP Practica</string>
     <string name="stranger_things">Stranger Things</string>
     <string name="trailer_oficial">Trailer Oficial</string>
     <string name="las_mejores_selecciones">Las mejores selecciones</string>
@@ -20,5 +21,11 @@
     <string name="empieza_tu_lista_de_seguimiento">Empieza tu lista de seguimiento</string>
     <string name="vistas_recientes">Vistas recientes</string>
     <string name="personas_favoritas">Personas favoritas</string>
+    <string name="no_has_visitado_ninguna_p_gina_recientemente">No has visitado ninguna página recientemente.</string>
     <string name="no_has_agregado_ninguna_persona_recientemente">No has agregado ninguna persona recientemente.</string>
+    <string name="inicio">Inicio</string>
+    <string name="buscar">Buscar</string>
+    <string name="play">Play</string>
+    <string name="perfil">Perfil</string>
+
 </resources>

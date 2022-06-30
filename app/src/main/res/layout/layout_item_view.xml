@@ -7,62 +7,62 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:background="@color/fragment_bg_color"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/padding_layoutitemview"
-    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/fragment_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_layoutitemview"
+        >
 
-    <ImageView
-        android:id="@+id/ivLogo"
-        android:layout_width="@dimen/width_heigth_layoutitemview"
-        android:layout_height="@dimen/width_heigth_layoutitemview"
-        android:scaleType="fitXY"
-        tools:background="@color/color_negro"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/width_heigth_layoutitemview"
+            android:layout_height="@dimen/width_heigth_layoutitemview"
+            android:scaleType="fitXY"
+            tools:background="@color/color_negro"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <TextView
-        android:id="@+id/tvMovieTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/start_top_layoutitemview"
-        android:layout_marginTop="@dimen/start_top_layoutitemview"
-        android:fontFamily="@font/robotobold"
-        android:textColor="@color/color_negro"
-        android:textSize="@dimen/titulo_layoutitemview"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/ivLogo"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="El Grinch" />
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_top_layoutitemview"
+            android:layout_marginTop="@dimen/start_top_layoutitemview"
+            android:fontFamily="@font/robotobold"
+            android:textColor="@color/color_negro"
+            android:textSize="@dimen/titulo_layoutitemview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="El Grinch" />
 
-    <TextView
-        android:id="@+id/tvMovieDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/start_top_layoutitemview"
-        tools:text="2000"
-        android:textStyle="bold"
-        android:textSize="@dimen/anio_layoutitemview"
-        android:textColor="@color/color_gris_claro"
-        android:fontFamily="@font/robotoregular"
-        app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
-        app:layout_constraintStart_toEndOf="@+id/ivLogo"/>
+        <TextView
+            android:id="@+id/tvMovieDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_top_layoutitemview"
+            tools:text="2000"
+            android:textStyle="bold"
+            android:textSize="@dimen/anio_layoutitemview"
+            android:textColor="@color/color_gris_claro"
+            android:fontFamily="@font/robotoregular"
+            app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
+            app:layout_constraintStart_toEndOf="@+id/ivLogo"/>
 
-    <TextView
-        android:id="@+id/tvMovieCast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/start_top_layoutitemview"
-        tools:text="Jim Carrey"
-        android:textSize="@dimen/reparto_layoutitemview"
-        android:textStyle="bold"
-        android:textColor="@color/color_gris_claro"
-        android:fontFamily="@font/robotoregular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ivLogo"
-        />
+        <TextView
+            android:id="@+id/tvMovieCast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_top_layoutitemview"
+            tools:text="Jim Carrey"
+            android:textSize="@dimen/reparto_layoutitemview"
+            android:textStyle="bold"
+            android:textColor="@color/color_gris_claro"
+            android:fontFamily="@font/robotoregular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivLogo"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

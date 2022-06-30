@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.MovieDetailsFragment">
+    tools:context=".fragment.MovieDetailsFragment">
 
     <TextView
         android:id="@+id/tv_back"
         android:layout_width="@dimen/layout_width_moviedetails"
         android:layout_height="@dimen/layout_height_moviedetails"
         android:layout_marginStart="@dimen/layout__marginStart_moviedetails"
-        android:background="@drawable/btn_icon_back"
+        android:background="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/titulo_ppal"
+        app:layout_constraintEnd_toStartOf="@+id/main_title"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02" />
 
     <TextView
-        android:id="@+id/titulo_ppal"
+        android:id="@+id/main_title"
         android:layout_width="match_parent"
         android:layout_height="@dimen/layout_height_moviedetails"
         android:layout_marginStart="@dimen/layout__marginStart_moviedetails"
@@ -39,6 +39,18 @@
         tools:text="Queens Gambit" />
 
     <TextView
+        android:id="@+id/tvfirstDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/fragment_bg_color"
+        android:gravity="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title"
+        app:layout_constraintVertical_bias="0.01"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
         android:id="@+id/tvVertical"
         android:layout_width="8dp"
         android:layout_height="30dp"
@@ -48,11 +60,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_ppal"
+        app:layout_constraintTop_toBottomOf="@+id/main_title"
         app:layout_constraintVertical_bias="0.03" />
 
     <TextView
-        android:id="@+id/tvTitulo"
+        android:id="@+id/tvtitle"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/robotobold"
@@ -62,13 +74,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toEndOf="@+id/tvVertical"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_ppal"
+        app:layout_constraintTop_toBottomOf="@+id/main_title"
         app:layout_constraintVertical_bias="0.03"
         tools:text="Gambito de Dama">
     </TextView>
 
     <TextView
-        android:id="@+id/tvSegundoTitulo"
+        android:id="@+id/tvsecondTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/robotoregular"
@@ -78,14 +90,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.33"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle"
         app:layout_constraintVertical_bias="0.03"
         tools:text="The queens Gambit (título original)">
 
     </TextView>
 
     <TextView
-        android:id="@+id/tipo_pelicula"
+        android:id="@+id/tvkindofMovie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="308dp"
@@ -96,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSegundoTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvsecondTitle"
         app:layout_constraintVertical_bias="0.0"
         tools:text="Mini Serie de TV 2020 - 2020 16" />
 
@@ -110,7 +122,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tipo_pelicula"
+        app:layout_constraintTop_toBottomOf="@+id/tvkindofMovie"
         app:layout_constraintVertical_bias="0.065"
         tools:src="@drawable/gamb" />
 
@@ -126,7 +138,7 @@
     </ImageView>
 
     <ImageView
-        android:id="@+id/imagen_miniatura"
+        android:id="@+id/imv_mini"
         android:layout_width="90dp"
         android:layout_height="120dp"
         android:scaleType="fitXY"
@@ -140,10 +152,10 @@
     </ImageView>
 
     <TextView
-        android:id="@+id/genero_pelicula"
+        android:id="@+id/genreMovie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_genero"
+        android:background="@drawable/background_genre"
         android:paddingHorizontal="10dp"
         android:paddingVertical="5dp"
         android:textColor="@color/color_gris_claro"
@@ -151,7 +163,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toEndOf="@+id/imagen_miniatura"
+        app:layout_constraintStart_toEndOf="@+id/imv_mini"
         app:layout_constraintTop_toBottomOf="@+id/video_play"
         app:layout_constraintVertical_bias="0.035"
         tools:text="Drama" />
@@ -162,17 +174,17 @@
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginBottom="188dp"
-        android:background="@drawable/ic_baseline_stars_24"
+        android:background="@drawable/ic_baseline_star_24"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toEndOf="@+id/genero_pelicula"
+        app:layout_constraintStart_toEndOf="@+id/genreMovie"
         app:layout_constraintTop_toBottomOf="@+id/video_play"
         app:layout_constraintVertical_bias="0.12" />
 
     <TextView
-        android:id="@+id/calificacion"
+        android:id="@+id/tvqualification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="120dp"
@@ -186,7 +198,7 @@
         tools:text="5.0" />
 
     <TextView
-        android:id="@+id/sinopsis"
+        android:id="@+id/synopsis"
         android:layout_width="244dp"
         android:layout_height="83dp"
         android:fontFamily="@font/robotobold"
@@ -195,25 +207,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toEndOf="@+id/imagen_miniatura"
+        app:layout_constraintStart_toEndOf="@+id/imv_mini"
         app:layout_constraintTop_toBottomOf="@+id/video_play"
         app:layout_constraintVertical_bias="0.18"
         tools:text="@tools:sample/lorem/random" />
 
     <TextView
-        android:id="@+id/divisor_medio"
+        android:id="@+id/tvmiddleDivider"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/fragment_bg_color"
         android:gravity="center"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sinopsis"
+        app:layout_constraintTop_toBottomOf="@+id/synopsis"
         app:layout_constraintVertical_bias="0.1"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/tvGuia"
+        android:id="@+id/tvGuide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/robotobold"
@@ -224,12 +236,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divisor_medio"
+        app:layout_constraintTop_toBottomOf="@+id/tvmiddleDivider"
         app:layout_constraintVertical_bias="0.1" />
 
 
     <TextView
-        android:id="@+id/tvcantidad_capitulos"
+        android:id="@+id/tvnumber_of_chapters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/color_gris_claro"
@@ -237,8 +249,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.73"
-        app:layout_constraintStart_toEndOf="@+id/tvGuia"
-        app:layout_constraintTop_toBottomOf="@+id/divisor_medio"
+        app:layout_constraintStart_toEndOf="@+id/tvGuide"
+        app:layout_constraintTop_toBottomOf="@+id/tvmiddleDivider"
         app:layout_constraintVertical_bias="0.129"
         tools:text="7 episodios" />
 
@@ -251,16 +263,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvcantidad_capitulos"
-        app:layout_constraintTop_toBottomOf="@+id/divisor_medio"
+        app:layout_constraintStart_toEndOf="@+id/tvnumber_of_chapters"
+        app:layout_constraintTop_toBottomOf="@+id/tvmiddleDivider"
         app:layout_constraintVertical_bias="0.1">
     </ImageView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAgregar"
+        android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:background="@drawable/amarillo_background"
+        android:background="@drawable/yellow_background"
         android:fontFamily="@font/robotobold"
         android:paddingHorizontal="15dp"
         android:text="@string/agregar_a_la_lista_de_seguimiento"
@@ -271,7 +283,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divisor_medio" />
+        app:layout_constraintTop_toBottomOf="@+id/tvmiddleDivider" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

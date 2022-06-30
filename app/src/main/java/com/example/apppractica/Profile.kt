@@ -1,3 +1,3 @@
 package com.example.apppractica
 
-data class Profile(var titulo: String, var descripcion: String, var cantidad: Int = 0)
+data class Profile(var title_profile: String, var description: String, var quantity: Int = 0)
