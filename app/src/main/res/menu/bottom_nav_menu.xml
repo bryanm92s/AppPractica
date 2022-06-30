@@ -2,22 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/inicioFragment"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="@string/inicio" />
-
+        android:title="Inicio" />
     <item
-        android:id="@+id/searchFragment"
+        android:id="@+id/buscarFragment"
         android:icon="@drawable/ic_baseline_search_24"
-        android:title="@string/buscar" />
-
+        android:title="Buscar" />
     <item
         android:id="@+id/playFragment"
         android:icon="@drawable/ic_baseline_play_circle_filled_24"
-        android:title="@string/play" />
-
+        android:title="Play" />
     <item
-        android:id="@+id/profileFragment"
+        android:id="@+id/perfilFragment"
         android:icon="@drawable/ic_baseline_account_circle_24"
-        android:title="@string/perfil" />
+        android:title="Perfil" />
 </menu>
