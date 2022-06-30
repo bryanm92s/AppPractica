@@ -14,6 +14,13 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- Customize Splash Screen. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">
+            @drawable/splashscreen
+        </item>
+    </style>
+
     <style name="NameStyle">
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:gravity">center_horizontal</item>

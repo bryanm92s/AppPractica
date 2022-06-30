@@ -13,11 +13,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_AppPractica)
         super.onCreate(savedInstanceState)
 
         // Instancia del view binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.myNavHostFragment) as NavHostFragment
