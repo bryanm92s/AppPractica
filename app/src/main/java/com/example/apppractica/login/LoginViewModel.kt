@@ -19,10 +19,10 @@ class LoginViewModel(private val repository: RegisterRepository, application: Ap
     val users = repository.users
 
     @Bindable
-    val inputUsername = MutableLiveData<String>()
+    val inputUsername = MutableLiveData<String?>()
 
     @Bindable
-    val inputPassword = MutableLiveData<String>()
+    val inputPassword = MutableLiveData<String?>()
 
     private val viewModelJob = Job()
     private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)

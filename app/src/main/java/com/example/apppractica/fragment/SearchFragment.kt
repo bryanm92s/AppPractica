@@ -9,8 +9,16 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.adapter.MovieAdapter
-import com.example.apppractica.provider.MovieProvider.Companion.movieList
 import com.example.apppractica.databinding.FragmentSearchBinding
+import com.example.apppractica.models.BestMovieResponse
+import com.example.apppractica.models.BestMovies
+import com.example.apppractica.models.MovieResponse
+import com.example.apppractica.models.Movies
+import com.example.apppractica.services.MovieApiInterface
+import com.example.apppractica.services.MovieApiService
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class SearchFragment : Fragment() {
 
@@ -25,7 +33,11 @@ class SearchFragment : Fragment() {
 
         val recyclerView: RecyclerView = binding.movieRecycler
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = MovieAdapter(movieList)
+        recyclerView.setHasFixedSize(true)
+
+        getMovieData { MovieList: List<Movies> ->
+            recyclerView.adapter = MovieAdapter(MovieList)
+        }
 
         // Agregar línea de división
         val manager=LinearLayoutManager(context)
@@ -37,5 +49,17 @@ class SearchFragment : Fragment() {
         recyclerView.addItemDecoration(mDividerItemDecoration)
 
         return binding.root
+    }
+
+    private  fun getMovieData(callback:(List<Movies>)->Unit){
+        val apiService = MovieApiService.getInstance().create(MovieApiInterface::class.java)
+        apiService.getMovieList().enqueue(object : Callback<MovieResponse> {
+            override fun onFailure(call: Call<MovieResponse>, t: Throwable) {
+
+            }
+            override fun onResponse(call: Call<MovieResponse>, response: Response<MovieResponse>) {
+                return callback(response.body()!!.Movies)
+            }
+        })
     }
 }

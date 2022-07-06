@@ -7,11 +7,14 @@
 
     <dimen name="width_heigth_layoutitemview">150dp</dimen>
     <dimen name="start_top_layoutitemview">8dp</dimen>
-    <dimen name="titulo_layoutitemview">22sp</dimen>
-    <dimen name="anio_layoutitemview">18sp</dimen>
-    <dimen name="reparto_layoutitemview">16sp</dimen>
+    <dimen name="titulo_layoutitemview">17sp</dimen>
+    <dimen name="anio_layoutitemview">15sp</dimen>
+    <dimen name="reparto_layoutitemview">15sp</dimen>
     <dimen name="start_layoutitemview">10dp</dimen>
     <dimen name="padding_layoutitemview">10dp</dimen>
+    <dimen name="layout_width_layoutitemview">230dp</dimen>
+    <dimen name="layout_height_layoutitemview">40dp</dimen>
+
 
     <dimen name="marginleftright_horizontal">8dp</dimen>
     <dimen name="padding_horizontal">16dp</dimen>
@@ -20,7 +23,7 @@
     <dimen name="textSizeTexto_horizontal">12sp</dimen>
     <dimen name="width_item_horizontal">120dp</dimen>
     <dimen name="height_item_horizontal">140dp</dimen>
-    <dimen name="textSize_item_horizontal">14sp</dimen>
+    <dimen name="textSize_item_horizontal">12sp</dimen>
     <dimen name="margin_top_item_horizontal">4dp</dimen>
 
     <dimen name="margin_start_perfil">10dp</dimen>

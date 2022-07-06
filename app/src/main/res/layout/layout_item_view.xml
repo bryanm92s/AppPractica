@@ -25,11 +25,17 @@
 
         <TextView
             android:id="@+id/tvMovieTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layout_width_layoutitemview"
+            android:layout_height="@dimen/layout_height_layoutitemview"
+            android:minWidth="150dp"
             android:layout_marginStart="@dimen/start_top_layoutitemview"
             android:layout_marginTop="@dimen/start_top_layoutitemview"
+            android:autoSizeTextType="uniform"
             android:fontFamily="@font/robotobold"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="2"
             android:textColor="@color/color_negro"
             android:textSize="@dimen/titulo_layoutitemview"
             android:textStyle="bold"
@@ -42,13 +48,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/start_top_layoutitemview"
-            tools:text="2000"
-            android:textStyle="bold"
-            android:textSize="@dimen/anio_layoutitemview"
-            android:textColor="@color/color_gris_claro"
+            android:layout_marginTop="12dp"
             android:fontFamily="@font/robotoregular"
+            android:textColor="@color/color_gris_claro"
+            android:textSize="@dimen/anio_layoutitemview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivLogo"
             app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
-            app:layout_constraintStart_toEndOf="@+id/ivLogo"/>
+            tools:text="2000" />
 
         <TextView
             android:id="@+id/tvMovieCast"

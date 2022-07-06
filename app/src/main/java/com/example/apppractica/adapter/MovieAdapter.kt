@@ -4,9 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.apppractica.Movies
+import com.bumptech.glide.Glide
 import com.example.apppractica.databinding.LayoutItemViewBinding
-import com.squareup.picasso.Picasso
+import com.example.apppractica.models.Movies
+
 
 class MovieAdapter(private val movieList: List<Movies>) : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
@@ -28,13 +29,14 @@ class MovieAdapter(private val movieList: List<Movies>) : RecyclerView.Adapter<M
     override fun getItemCount(): Int =  movieList.size
 
     inner class ViewHolder( val binding: LayoutItemViewBinding) : RecyclerView.ViewHolder(binding.root){
+        private val IMAGE_BASE="https://image.tmdb.org/t/p/w500/"
 
         fun bind(items: Movies) {
 
-            Picasso.get().load(items.logo).into(binding.ivLogo)
+            Glide.with(itemView).load(IMAGE_BASE + items.poster).into(binding.ivLogo)
             binding.tvMovieTitle.text = items.title
-            binding.tvMovieDate.text=items.date
-            binding.tvMovieCast.text=items.cast
+            binding.tvMovieDate.text=items.release_date
+            binding.tvMovieCast.text=items.original_title
 
             // Gestionar clicks en el cuadro del RecyclerView
             binding.ivLogo.setOnClickListener {
