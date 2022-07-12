@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.apppractica.database.RegisterRepository
-import java.lang.IllegalArgumentException
 
 class LoginViewModelFactory(
     private val repository: RegisterRepository,

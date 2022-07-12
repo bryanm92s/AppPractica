@@ -5,10 +5,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.apppractica.models.BestMovies
 import com.example.apppractica.databinding.ItemHorizontalBinding
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.item_horizontal.view.*
+import com.example.apppractica.models.BestMovies
 
 class BestMoviesAdapter(private val bestMovieList: List<BestMovies>) : RecyclerView.Adapter<BestMoviesAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

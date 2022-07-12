@@ -1,7 +1,6 @@
 package com.example.apppractica.login
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -43,7 +42,6 @@ class LoginFragment : Fragment() {
 
         loginViewModel.navigatetoRegister.observe(viewLifecycleOwner, Observer { hasFinished->
             if (hasFinished == true){
-                Log.i("MYTAG","navigate Register")
                 displayRegister()
                 loginViewModel.doneNavigatingRegister()
             }
@@ -72,7 +70,6 @@ class LoginFragment : Fragment() {
 
         loginViewModel.navigatetoHome.observe(viewLifecycleOwner, Observer { hasFinished->
             if (hasFinished == true){
-                Log.i("MYTAG","navigate Home")
                 navigateHome()
                 loginViewModel.doneNavigatingHome()
             }
@@ -82,13 +79,11 @@ class LoginFragment : Fragment() {
     }
 
     private fun displayRegister() {
-        Log.i("MYTAG","displayRegister")
         val action = LoginFragmentDirections.actionLoginFragmentToRegisterFragment()
         NavHostFragment.findNavController(this).navigate(action)
     }
 
     private fun navigateHome() {
-        Log.i("MYTAG","navigateHome")
         val action = LoginFragmentDirections.actionLoginFragmentToHomeFragment()
         NavHostFragment.findNavController(this).navigate(action)
     }

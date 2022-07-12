@@ -5,11 +5,6 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 
-/*data class BestMovies(var logo:String, var stars:Double, var title: String){
-
-}*/
-
-
 @Parcelize
 data class BestMovies(
     @SerializedName("id")

@@ -1,7 +1,6 @@
 package com.example.apppractica.register
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,15 +43,11 @@ class RegisterFragment : Fragment() {
         // Navigate to Login
         registerViewModel.navigateto.observe(viewLifecycleOwner, Observer { hasFinished ->
             if (hasFinished == true) {
-                Log.i("MYTAG", "insidi observe")
                 displayLogin()
                 registerViewModel.doneNavigating()
             }
         })
 
-        registerViewModel.userDetailsLiveData.observe(viewLifecycleOwner, Observer {
-            Log.i("MYTAG", it.toString() + "000000000000000000000000")
-        })
 
         // Error toast
         registerViewModel.errortoast.observe(viewLifecycleOwner, Observer { hasError ->
@@ -92,12 +87,19 @@ class RegisterFragment : Fragment() {
             }
         })
 
+        //Go to login
+        binding.btnBackLogin.setOnClickListener {
+            val action = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
+            NavHostFragment.findNavController(this).navigate(action)
+
+        }
+
         return binding.root
 
     }
 
+
     private fun displayLogin(){
-        Log.i("MYTAG", "navigate Login")
         Toast.makeText(requireContext(), "User created successfully", Toast.LENGTH_SHORT).show()
         val action = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
         NavHostFragment.findNavController(this).navigate(action)

@@ -11,7 +11,6 @@ import com.example.apppractica.adapter.BestMoviesAdapter
 import com.example.apppractica.databinding.FragmentHomeBinding
 import com.example.apppractica.models.BestMovieResponse
 import com.example.apppractica.models.BestMovies
-import com.example.apppractica.models.MovieResponse
 import com.example.apppractica.services.MovieApiInterface
 import com.example.apppractica.services.MovieApiService
 import retrofit2.Call

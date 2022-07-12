@@ -1,17 +1,15 @@
 package com.example.apppractica.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apppractica.adapter.MovieAdapter
 import com.example.apppractica.databinding.FragmentSearchBinding
-import com.example.apppractica.models.BestMovieResponse
-import com.example.apppractica.models.BestMovies
 import com.example.apppractica.models.MovieResponse
 import com.example.apppractica.models.Movies
 import com.example.apppractica.services.MovieApiInterface

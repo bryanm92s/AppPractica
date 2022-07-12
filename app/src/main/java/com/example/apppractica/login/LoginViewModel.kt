@@ -1,7 +1,6 @@
 package com.example.apppractica.login
 
 import android.app.Application
-import android.util.Log
 import androidx.databinding.Bindable
 import androidx.databinding.Observable
 import androidx.lifecycle.AndroidViewModel
@@ -95,17 +94,14 @@ class LoginViewModel(private val repository: RegisterRepository, application: Ap
 
     fun donetoast() {
         _errorToast.value = false
-        Log.i("MYTAG", "Done taoasting ")
     }
 
     fun donetoastErrorUsername() {
         _errorToastUsername.value = false
-        Log.i("MYTAG", "Done taoasting ")
     }
 
     fun donetoastInvalidPassword() {
         _errorToastInvalidPassword.value = false
-        Log.i("MYTAG", "Done taoasting ")
     }
 
     override fun removeOnPropertyChangedCallback(callback: Observable.OnPropertyChangedCallback?) {
