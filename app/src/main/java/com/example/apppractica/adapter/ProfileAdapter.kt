@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.apppractica.Profile
+import com.example.apppractica.models.Profile
 import com.example.apppractica.databinding.ItemOperacionesHorizontalBinding
 
 class ProfileAdapter(private val profileList: List<Profile>) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {

@@ -1,6 +1,6 @@
 package com.example.apppractica.provider
 
-import com.example.apppractica.Profile
+import com.example.apppractica.models.Profile
 
 class ProfileProvider {
     companion object{

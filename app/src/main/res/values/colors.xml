@@ -34,4 +34,14 @@
     <color name="color_transparente">#00FF0000</color>
 
 
+
+
+    <color name="whitee">#F4F2F6</color>
+    <color name="red">#D60404</color>
+    <color name="gray">#4E4E4E</color>
+    <color name="what">#AF9B9B</color>
+    <color name="blacy">#151515</color>
+    <color name="mint">#B4F8C8</color>
+
+
 </resources>
