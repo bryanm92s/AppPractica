@@ -19,9 +19,9 @@
                 android:id="@+id/searchView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="@dimen/marginHorizontal_search"
+                android:layout_marginTop="@dimen/marginTop_search"
+                android:layout_marginBottom="@dimen/marginBottom_search"
                 android:background="@drawable/searchview_background"
                 app:iconifiedByDefault="false"
                 app:queryBackground="@color/color_transparente"
@@ -35,8 +35,8 @@
             android:id="@+id/movieRecycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/marginStart_search"
+            android:layout_marginEnd="@dimen/marginEnd_search"
             />
 
     </LinearLayout>

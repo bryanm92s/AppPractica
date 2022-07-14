@@ -26,6 +26,22 @@
     <dimen name="textSize_item_horizontal">12sp</dimen>
     <dimen name="margin_top_item_horizontal">4dp</dimen>
 
+    <dimen name="layout_height_horizontal">30dp</dimen>
+    <dimen name="layout_marginStart_horizontal">4dp</dimen>
+    <dimen name="layout_marginEnd_horizontal">4dp</dimen>
+    <dimen name="layout_marginTop_horizontal">6dp</dimen>
+
+    <dimen name="tv_layout_marginStart_horizontal">4dp</dimen>
+    <dimen name="tv_layout_width_horizontal">20dp</dimen>
+    <dimen name="tv_layout_height_horizontal">10dp</dimen>
+
+    <dimen name="tv_layout_marginEnd_horizontal">4dp</dimen>
+    <dimen name="tv_layout_marginBottom_horizontal">8dp</dimen>
+
+    <dimen name="layout_marginHorizontal_horizontal">8dp</dimen>
+    <dimen name="layout_marginVertical_horizontal">8dp</dimen>
+
+
     <dimen name="margin_start_perfil">10dp</dimen>
     <dimen name="margin_top_perfil">10dp</dimen>
 
@@ -180,6 +196,15 @@
     <dimen name="btn_paddingHorizontal_detail">15dp</dimen>
     <dimen name="btn_textSize_detail">18sp</dimen>
     <dimen name="btn_onstraintHorizontal_bias_detail">0.6</dimen>
+
+    <dimen name="marginHorizontal_search">16dp</dimen>
+    <dimen name="marginTop_search">30dp</dimen>
+    <dimen name="marginBottom_search">16dp</dimen>
+
+    <dimen name="marginStart_search">16dp</dimen>
+    <dimen name="marginEnd_search">16dp</dimen>
+
+
 
 
 </resources>
