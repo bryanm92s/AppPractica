@@ -32,7 +32,7 @@ class BestMoviesAdapter(private val bestMovieList: List<BestMovies>, val listene
         fun bind(items: BestMovies) {
 
             Glide.with(itemView).load(IMAGE_BASE + items.poster).into(binding.ivLogo)
-            binding.tvstars.text= items.vote_average.toString()
+            binding.tvVote.text= items.vote_average.toString()
             binding.tvtitle.text=items.title
 
         }

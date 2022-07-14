@@ -50,7 +50,4 @@ class DetailBestMovieActivity : AppCompatActivity() {
         return true
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-    }
 }

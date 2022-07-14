@@ -10,7 +10,6 @@ class RegisterRepository(private val dao: RegisterDatabaseDao) {
     }
 
     suspend fun getUserName(userName: String):RegisterEntity?{
-        Log.i("MYTAG", "inside Repository Getusers fun ")
         return dao.getUsername(userName)
     }
 }

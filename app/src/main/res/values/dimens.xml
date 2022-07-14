@@ -79,4 +79,67 @@
     <dimen name="boxCornerRadiusBottomStart_register">10dp</dimen>
     <dimen name="boxCornerRadiusTopStart_register">10dp</dimen>
 
+    <dimen name="layout_constraintHorizontal_bias_detail">0.0</dimen>
+    <dimen name="layout_constraintVertical_bias_detail">0.03</dimen>
+    <dimen name="layout_width_detail">180dp</dimen>
+    <dimen name="layout_height_detail">40dp</dimen>
+    <dimen name="textSize_detail">16sp</dimen>
+    <dimen name="textSize_sub_detail">13sp</dimen>
+    <dimen name="constraintHorizontal_bias_detail">0.4</dimen>
+    <dimen name="layout_height__detail">2dp</dimen>
+    <dimen name="layout_constraintHor_bias_vert_detail">0.15</dimen>
+
+    <dimen name="layout_width_tv_detail">8dp</dimen>
+    <dimen name="layout_height_tv_detail">30dp</dimen>
+
+    <dimen name="layout_width_tv_title_detail">215dp</dimen>
+    <dimen name="layout_constraintHorizontal_bias_title_detail">0.07</dimen>
+    <dimen name="layout_marginBottom_detail">308dp</dimen>
+    <dimen name="layout_constraintH_bias_detail">0.313</dimen>
+    <dimen name="layout_constraintV_bias_detail">0.109</dimen>
+
+
+    <dimen name="layout_height_vplay_detail">200dp</dimen>
+    <dimen name="icon_width_vplay_detail">100dp</dimen>
+    <dimen name="icon_height_vplay_detail">60dp</dimen>
+
+    <dimen name="poster_width_detail">90dp</dimen>
+    <dimen name="poster_height_detail">130dp</dimen>
+    <dimen name="poster_horivert_detail">0.05</dimen>
+
+    <dimen name="genre_paddingHorizontal_detail">10dp</dimen>
+    <dimen name="genre_paddingVertical_detail">5dp</dimen>
+
+    <dimen name="star_layout_marginBottom_detail">188dp</dimen>
+    <dimen name="star_layout_constraintHorizontal_bias_detail">0.109</dimen>
+    <dimen name="star_layout_constraintVertical_bias_detail">0.13</dimen>
+
+    <dimen name="vote_layout_width_detail">24dp</dimen>
+    <dimen name="vote_layout_height_detail">24dp</dimen>
+    <dimen name="vote_layout_marginEnd_detail">120dp</dimen>
+    <dimen name="vote_constraintHorizontal_bias_detail">0.135</dimen>
+    <dimen name="vote_layout_constraintVertical_bias_detail">0.056</dimen>
+
+
+    <dimen name="overview_layout_width_detail">280dp</dimen>
+    <dimen name="overview_layout_height_detail">95dp</dimen>
+    <dimen name="overview_layout_marginStart_detail">120dp</dimen>
+    <dimen name="overview_layout_marginEnd_detail">1dp</dimen>
+    <dimen name="overview_constVert_bias_detail">0.18</dimen>
+    <dimen name="overview_textSize_detail">15sp</dimen>
+    <dimen name="overview_constraintVertical_bias">0.1</dimen>
+
+
+    <dimen name="chapter_constraintHorizontal_bias">0.73</dimen>
+    <dimen name="chapter_constraintVertical_bias">0.129</dimen>
+    <dimen name="tv_next_marginStart_detail">12dp</dimen>
+
+
+
+    <dimen name="btn_layout_height_detail">50dp</dimen>
+    <dimen name="btn_paddingHorizontal_detail">15dp</dimen>
+    <dimen name="btn_textSize_detail">18sp</dimen>
+    <dimen name="btn_onstraintHorizontal_bias_detail">0.6</dimen>
+
+
 </resources>
