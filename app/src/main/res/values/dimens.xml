@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="big_padding">32dp</dimen>
+
+
+    <dimen name="width_heigth_layoutitemview">150dp</dimen>
+    <dimen name="start_top_layoutitemview">8dp</dimen>
+    <dimen name="titulo_layoutitemview">17sp</dimen>
+    <dimen name="anio_layoutitemview">15sp</dimen>
+    <dimen name="reparto_layoutitemview">15sp</dimen>
+    <dimen name="start_layoutitemview">10dp</dimen>
+    <dimen name="padding_layoutitemview">10dp</dimen>
+    <dimen name="layout_width_layoutitemview">230dp</dimen>
+    <dimen name="layout_height_layoutitemview">40dp</dimen>
+
+
+    <dimen name="marginleftright_horizontal">8dp</dimen>
+    <dimen name="padding_horizontal">16dp</dimen>
+    <dimen name="width_horizontal">150dp</dimen>
+    <dimen name="height_horizontal">100dp</dimen>
+    <dimen name="textSizeTexto_horizontal">12sp</dimen>
+    <dimen name="width_item_horizontal">120dp</dimen>
+    <dimen name="height_item_horizontal">140dp</dimen>
+    <dimen name="textSize_item_horizontal">12sp</dimen>
+    <dimen name="margin_top_item_horizontal">4dp</dimen>
+
+    <dimen name="margin_start_perfil">10dp</dimen>
+    <dimen name="margin_top_perfil">10dp</dimen>
+
+    <dimen name="margin_login">32dp</dimen>
+    <dimen name="width_img_login">50dp</dimen>
+    <dimen name="height_img_login">50dp</dimen>
+
+    <dimen name="margin_top_profile">10dp</dimen>
+    <dimen name="margin_start_profile">30dp</dimen>
+    <dimen name="margin_end_profile">30dp</dimen>
+    <dimen name="margin_top__profile">20dp</dimen>
+    <dimen name="margin_horizontal_profile">45dp</dimen>
+    <dimen name="subtitulos_profile">14sp</dimen>
+    <dimen name="textsize_vertical_profile">25sp</dimen>
+    <dimen name="layout_width_nombre_usuario_profile">130dp</dimen>
+    <dimen name="layout_height_nombre_usuario_profile">30dp</dimen>
+    <dimen name="textsize_titulos_profile">20sp</dimen>
+    <dimen name="dimen_configuration_profile">30dp</dimen>
+    <dimen name="layout_height_separator_profile">10dp</dimen>
+    <dimen name="layout_marginTop_titulos_profile">12dp</dimen>
+    <dimen name="layout_marginBottom_profile">120dp</dimen>
+    <dimen name="layout_marginStartFav_profile">12dp</dimen>
+    <dimen name="layout_marginTopFav_profile">16dp</dimen>
+    <dimen name="layout_width_vertical_profile">8dp</dimen>
+    <dimen name="layout_height_vertical_profile">30dp</dimen>
+    <dimen name="layout_marginTop_vertical_profile">16dp</dimen>
+    <dimen name="layout_width_profile">50dp</dimen>
+    <dimen name="layout_height_profile">50dp</dimen>
+
+    <dimen name="titulos_home">20sp</dimen>
+    <dimen name="subtitulos_home">14sp</dimen>
+    <dimen name="layout_height_home">25dp</dimen>
+    <dimen name="margin_start_end_home">20dp</dimen>
+
+
+
+    <dimen name="layout_width_moviedetails">40dp</dimen>
+    <dimen name="layout_height_moviedetails">40dp</dimen>
+    <dimen name="layout__marginStart_moviedetails">20dp</dimen>
+    <dimen name="layout_marginEnd_moviedetails">40dp</dimen>
+    <dimen name="textSize_moviedetails">25sp</dimen>
+    <dimen name="textSize_overview_moviedetails">14sp</dimen>
+
+
+
+    <dimen name="layout_marginStart_register">60dp</dimen>
+    <dimen name="layout_marginTop_register">16dp</dimen>
+    <dimen name="layout_marginEnd_register">32dp</dimen>
+    <dimen name="boxCornerRadiusBottomEnd_register">10dp</dimen>
+    <dimen name="boxCornerRadiusTopEnd_register">10dp</dimen>
+    <dimen name="boxCornerRadiusBottomStart_register">10dp</dimen>
+    <dimen name="boxCornerRadiusTopStart_register">10dp</dimen>
+
+</resources>
