@@ -32,7 +32,7 @@
             android:layout_width="@dimen/layout_width_nombre_usuario_profile"
             android:layout_height="@dimen/layout_height_nombre_usuario_profile"
             android:fontFamily="@font/robotobold"
-            android:text="Juan Pérez"
+            android:text="@string/juan_p_rez"
             android:textColor="@color/color_negro"
             android:textSize="@dimen/textsize_titulos_profile"
             app:layout_constraintBottom_toBottomOf="parent"

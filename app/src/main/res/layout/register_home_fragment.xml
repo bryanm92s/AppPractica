@@ -30,7 +30,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="40dp"
                 android:src="@drawable/ic_baseline_arrow_back_24"
-                android:contentDescription="Atras" />
+                android:contentDescription="@string/atras" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="120dp"
@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/imdb"
-                    android:contentDescription="Logo" />
+                    android:contentDescription="@string/logo" />
 
             </androidx.cardview.widget.CardView>
 
@@ -70,7 +70,7 @@
                 app:boxCornerRadiusTopEnd="@dimen/boxCornerRadiusTopEnd_register"
                 app:boxCornerRadiusBottomStart="@dimen/boxCornerRadiusBottomStart_register"
                 app:boxCornerRadiusTopStart="@dimen/boxCornerRadiusTopStart_register"
-                android:hint="Nombre"
+                android:hint="@string/nombre"
                 app:hintAnimationEnabled="false"
                 >
 
@@ -96,7 +96,7 @@
                 app:boxCornerRadiusTopEnd="@dimen/boxCornerRadiusTopEnd_register"
                 app:boxCornerRadiusBottomStart="@dimen/boxCornerRadiusBottomStart_register"
                 app:boxCornerRadiusTopStart="@dimen/boxCornerRadiusTopStart_register"
-                android:hint="Correo electrónico"
+                android:hint="@string/correo_electr_nico"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -121,7 +121,7 @@
                 app:boxCornerRadiusTopEnd="@dimen/boxCornerRadiusTopEnd_register"
                 app:boxCornerRadiusBottomStart="@dimen/boxCornerRadiusBottomStart_register"
                 app:boxCornerRadiusTopStart="@dimen/boxCornerRadiusTopStart_register"
-                android:hint="Contraseña"
+                android:hint="@string/contrasenia"
                 app:passwordToggleEnabled="true"
                 >
 
