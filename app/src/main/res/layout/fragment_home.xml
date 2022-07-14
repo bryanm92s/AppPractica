@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/strangers"
-        android:layout_width="0dp"
-        android:layout_height="240dp"
+        android:layout_width="@dimen/layout_width_home"
+        android:layout_height="@dimen/layout_height__home"
         android:src="@drawable/strangers"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,38 +20,38 @@
 
     <ImageView
         android:id="@+id/strangersthings"
-        android:layout_width="120dp"
-        android:layout_height="150dp"
+        android:layout_width="@dimen/poster_layout_width_home"
+        android:layout_height="@dimen/poster_layout_height_home"
         android:src="@drawable/strangersthings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHorizontal_bias="@dimen/poster_constraintHorizontal_home"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3">
+        app:layout_constraintVertical_bias="@dimen/poster_constraintVertical_home">
     </ImageView>
 
     <TextView
         android:id="@+id/tvtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="@dimen/layout_marginTop_home"
         android:text="@string/stranger_things"
         android:textColor="@color/color_negro"
         android:textSize="@dimen/titulos_home"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="@dimen/constraintHorizontal_home"
         app:layout_constraintStart_toEndOf="@+id/strangersthings"
         app:layout_constraintTop_toBottomOf="@+id/strangers"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="@dimen/constraintVertical_home">
     </TextView>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_width="@dimen/imageplay_width_home"
+        android:layout_height="@dimen/imageplay_height_home"
         android:src="@drawable/ic_baseline_play_circle_outline_24"
         app:layout_constraintBottom_toBottomOf="@+id/strangers"
         app:layout_constraintEnd_toEndOf="@+id/strangers"

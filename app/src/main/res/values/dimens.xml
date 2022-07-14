@@ -60,6 +60,46 @@
     <dimen name="layout_height_home">25dp</dimen>
     <dimen name="margin_start_end_home">20dp</dimen>
 
+    <dimen name="layout_width_home">0dp</dimen>
+    <dimen name="layout_height__home">240dp</dimen>
+
+    <dimen name="poster_layout_width_home">120dp</dimen>
+    <dimen name="poster_layout_height_home">150dp</dimen>
+
+    <dimen name="poster_constraintHorizontal_home">0.1</dimen>
+    <dimen name="poster_constraintVertical_home">0.3</dimen>
+
+    <dimen name="layout_marginTop_home">12dp</dimen>
+    <dimen name="constraintHorizontal_home">0.06</dimen>
+    <dimen name="constraintVertical_home">0.0</dimen>
+
+
+    <dimen name="imageplay_width_home">100dp</dimen>
+    <dimen name="imageplay_height_home">60dp</dimen>
+
+    <dimen name="paddingTop_main">10dp</dimen>
+    <dimen name="paddingBottom_main">10dp</dimen>
+    <dimen name="itemIconSize_main">24dp</dimen>
+
+    <dimen name="layout_width_main">0dp</dimen>
+    <dimen name="layout_height_main">0dp</dimen>
+
+    <dimen name="layout_height_login">100dp</dimen>
+    <dimen name="textSize_login">20sp</dimen>
+    <dimen name="layout_marginTop_login">16dp</dimen>
+
+    <dimen name="height_login">60dp</dimen>
+    <dimen name="marginTop_login">10dp</dimen>
+    <dimen name="ems_login">10</dimen>
+    <dimen name="paddingStart_login">20dp</dimen>
+    <dimen name="text_login">17sp</dimen>
+    <dimen name="text_btn_login">20sp</dimen>
+    <dimen name="marginTop__login">20dp</dimen>
+    <dimen name="icon_layout_weight">1</dimen>
+    <dimen name="icon_marginLeft_login">100dp</dimen>
+    <dimen name="icon_marginRight_login">100dp</dimen>
+    <dimen name="forget_marginTop_login">2dp</dimen>
+
 
 
     <dimen name="layout_width_moviedetails">40dp</dimen>
