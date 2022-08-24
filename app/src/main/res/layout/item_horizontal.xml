@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginHorizontal="@dimen/layout_marginHorizontal_horizontal"
+    android:layout_marginVertical="@dimen/layout_marginVertical_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo_"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item_horizontal"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvstars_"
+            android:layout_marginStart="@dimen/layout_marginStart_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_item_horizontal"
+            android:textColor="@color/color_negro"
+            android:textSize="@dimen/textSize_item_horizontal"
+            app:drawableStartCompat="@drawable/ic_baseline_star_24" />
+
+        <TextView
+            android:id="@+id/tv_vote"
+            android:layout_marginStart="@dimen/margin_top_item_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_item_horizontal"
+            android:textColor="@color/color_negro"
+            android:textSize="@dimen/textSize_item_horizontal"
+            android:layout_gravity="center"
+            tools:text="5.0"/>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvtitle_"
+            android:layout_width="@dimen/width_item_horizontal"
+            android:layout_height="@dimen/layout_height_horizontal"
+            android:layout_marginStart="@dimen/layout_marginStart_horizontal"
+            android:layout_marginEnd="@dimen/layout_marginEnd_horizontal"
+            android:fontFamily="@font/robotoregular"
+            tools:text="Prueba de título de película"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/layout_marginTop_horizontal"
+            android:textColor="@color/color_gris_oscuro"
+            android:textSize="@dimen/textSize_item_horizontal" />
+
+        <TextView
+            android:layout_marginStart="@dimen/tv_layout_marginStart_horizontal"
+            android:layout_width="@dimen/tv_layout_width_horizontal"
+            android:layout_height="@dimen/tv_layout_height_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvinfo_"
+            android:layout_marginEnd="@dimen/tv_layout_marginEnd_horizontal"
+            android:layout_marginBottom="@dimen/tv_layout_marginBottom_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="@dimen/margin_top_item_horizontal"
+            android:background="@drawable/ic_baseline_info_24" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

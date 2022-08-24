@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="big_padding">32dp</dimen>
+
+
+    <dimen name="width_heigth_layoutitemview">150dp</dimen>
+    <dimen name="start_top_layoutitemview">8dp</dimen>
+    <dimen name="titulo_layoutitemview">17sp</dimen>
+    <dimen name="anio_layoutitemview">15sp</dimen>
+    <dimen name="reparto_layoutitemview">15sp</dimen>
+    <dimen name="start_layoutitemview">10dp</dimen>
+    <dimen name="padding_layoutitemview">10dp</dimen>
+    <dimen name="layout_width_layoutitemview">230dp</dimen>
+    <dimen name="layout_height_layoutitemview">40dp</dimen>
+
+
+    <dimen name="marginleftright_horizontal">8dp</dimen>
+    <dimen name="padding_horizontal">16dp</dimen>
+    <dimen name="width_horizontal">150dp</dimen>
+    <dimen name="height_horizontal">100dp</dimen>
+    <dimen name="textSizeTexto_horizontal">12sp</dimen>
+    <dimen name="width_item_horizontal">120dp</dimen>
+    <dimen name="height_item_horizontal">140dp</dimen>
+    <dimen name="textSize_item_horizontal">12sp</dimen>
+    <dimen name="margin_top_item_horizontal">4dp</dimen>
+
+    <dimen name="layout_height_horizontal">30dp</dimen>
+    <dimen name="layout_marginStart_horizontal">4dp</dimen>
+    <dimen name="layout_marginEnd_horizontal">4dp</dimen>
+    <dimen name="layout_marginTop_horizontal">6dp</dimen>
+
+    <dimen name="tv_layout_marginStart_horizontal">4dp</dimen>
+    <dimen name="tv_layout_width_horizontal">20dp</dimen>
+    <dimen name="tv_layout_height_horizontal">10dp</dimen>
+
+    <dimen name="tv_layout_marginEnd_horizontal">4dp</dimen>
+    <dimen name="tv_layout_marginBottom_horizontal">8dp</dimen>
+
+    <dimen name="layout_marginHorizontal_horizontal">8dp</dimen>
+    <dimen name="layout_marginVertical_horizontal">8dp</dimen>
+
+
+    <dimen name="margin_start_perfil">10dp</dimen>
+    <dimen name="margin_top_perfil">10dp</dimen>
+
+    <dimen name="margin_login">32dp</dimen>
+    <dimen name="width_img_login">50dp</dimen>
+    <dimen name="height_img_login">50dp</dimen>
+
+    <dimen name="margin_top_profile">10dp</dimen>
+    <dimen name="margin_start_profile">30dp</dimen>
+    <dimen name="margin_end_profile">30dp</dimen>
+    <dimen name="margin_top__profile">20dp</dimen>
+    <dimen name="margin_horizontal_profile">45dp</dimen>
+    <dimen name="subtitulos_profile">14sp</dimen>
+    <dimen name="textsize_vertical_profile">25sp</dimen>
+    <dimen name="layout_width_nombre_usuario_profile">130dp</dimen>
+    <dimen name="layout_height_nombre_usuario_profile">30dp</dimen>
+    <dimen name="textsize_titulos_profile">20sp</dimen>
+    <dimen name="dimen_configuration_profile">30dp</dimen>
+    <dimen name="layout_height_separator_profile">10dp</dimen>
+    <dimen name="layout_marginTop_titulos_profile">12dp</dimen>
+    <dimen name="layout_marginBottom_profile">120dp</dimen>
+    <dimen name="layout_marginStartFav_profile">12dp</dimen>
+    <dimen name="layout_marginTopFav_profile">16dp</dimen>
+    <dimen name="layout_width_vertical_profile">8dp</dimen>
+    <dimen name="layout_height_vertical_profile">30dp</dimen>
+    <dimen name="layout_marginTop_vertical_profile">16dp</dimen>
+    <dimen name="layout_width_profile">50dp</dimen>
+    <dimen name="layout_height_profile">50dp</dimen>
+
+    <dimen name="titulos_home">20sp</dimen>
+    <dimen name="subtitulos_home">14sp</dimen>
+    <dimen name="layout_height_home">25dp</dimen>
+    <dimen name="margin_start_end_home">20dp</dimen>
+
+    <dimen name="layout_width_home">0dp</dimen>
+    <dimen name="layout_height__home">240dp</dimen>
+
+    <dimen name="poster_layout_width_home">120dp</dimen>
+    <dimen name="poster_layout_height_home">150dp</dimen>
+
+    <dimen name="poster_constraintHorizontal_home">0.1</dimen>
+    <dimen name="poster_constraintVertical_home">0.3</dimen>
+
+    <dimen name="layout_marginTop_home">12dp</dimen>
+    <dimen name="constraintHorizontal_home">0.06</dimen>
+    <dimen name="constraintVertical_home">0.0</dimen>
+
+
+    <dimen name="imageplay_width_home">100dp</dimen>
+    <dimen name="imageplay_height_home">60dp</dimen>
+
+    <dimen name="paddingTop_main">10dp</dimen>
+    <dimen name="paddingBottom_main">10dp</dimen>
+    <dimen name="itemIconSize_main">24dp</dimen>
+
+    <dimen name="layout_width_main">0dp</dimen>
+    <dimen name="layout_height_main">0dp</dimen>
+
+    <dimen name="layout_height_login">100dp</dimen>
+    <dimen name="textSize_login">20sp</dimen>
+    <dimen name="layout_marginTop_login">16dp</dimen>
+
+    <dimen name="height_login">60dp</dimen>
+    <dimen name="marginTop_login">10dp</dimen>
+    <dimen name="ems_login">10</dimen>
+    <dimen name="paddingStart_login">20dp</dimen>
+    <dimen name="text_login">17sp</dimen>
+    <dimen name="text_btn_login">20sp</dimen>
+    <dimen name="marginTop__login">20dp</dimen>
+    <dimen name="icon_layout_weight">1</dimen>
+    <dimen name="icon_marginLeft_login">100dp</dimen>
+    <dimen name="icon_marginRight_login">100dp</dimen>
+    <dimen name="forget_marginTop_login">2dp</dimen>
+
+
+
+    <dimen name="layout_width_moviedetails">40dp</dimen>
+    <dimen name="layout_height_moviedetails">40dp</dimen>
+    <dimen name="layout__marginStart_moviedetails">20dp</dimen>
+    <dimen name="layout_marginEnd_moviedetails">40dp</dimen>
+    <dimen name="textSize_moviedetails">25sp</dimen>
+    <dimen name="textSize_overview_moviedetails">14sp</dimen>
+
+
+
+    <dimen name="layout_marginStart_register">60dp</dimen>
+    <dimen name="layout_marginTop_register">16dp</dimen>
+    <dimen name="layout_marginEnd_register">32dp</dimen>
+    <dimen name="boxCornerRadiusBottomEnd_register">10dp</dimen>
+    <dimen name="boxCornerRadiusTopEnd_register">10dp</dimen>
+    <dimen name="boxCornerRadiusBottomStart_register">10dp</dimen>
+    <dimen name="boxCornerRadiusTopStart_register">10dp</dimen>
+
+    <dimen name="layout_constraintHorizontal_bias_detail">0.0</dimen>
+    <dimen name="layout_constraintVertical_bias_detail">0.03</dimen>
+    <dimen name="layout_width_detail">180dp</dimen>
+    <dimen name="layout_height_detail">40dp</dimen>
+    <dimen name="textSize_detail">16sp</dimen>
+    <dimen name="textSize_sub_detail">13sp</dimen>
+    <dimen name="constraintHorizontal_bias_detail">0.4</dimen>
+    <dimen name="layout_height__detail">2dp</dimen>
+    <dimen name="layout_constraintHor_bias_vert_detail">0.15</dimen>
+
+    <dimen name="layout_width_tv_detail">8dp</dimen>
+    <dimen name="layout_height_tv_detail">30dp</dimen>
+
+    <dimen name="layout_width_tv_title_detail">215dp</dimen>
+    <dimen name="layout_constraintHorizontal_bias_title_detail">0.07</dimen>
+    <dimen name="layout_marginBottom_detail">308dp</dimen>
+    <dimen name="layout_constraintH_bias_detail">0.313</dimen>
+    <dimen name="layout_constraintV_bias_detail">0.109</dimen>
+
+
+    <dimen name="layout_height_vplay_detail">200dp</dimen>
+    <dimen name="icon_width_vplay_detail">100dp</dimen>
+    <dimen name="icon_height_vplay_detail">60dp</dimen>
+
+    <dimen name="poster_width_detail">90dp</dimen>
+    <dimen name="poster_height_detail">130dp</dimen>
+    <dimen name="poster_horivert_detail">0.05</dimen>
+
+    <dimen name="genre_paddingHorizontal_detail">10dp</dimen>
+    <dimen name="genre_paddingVertical_detail">5dp</dimen>
+
+    <dimen name="star_layout_marginBottom_detail">188dp</dimen>
+    <dimen name="star_layout_constraintHorizontal_bias_detail">0.109</dimen>
+    <dimen name="star_layout_constraintVertical_bias_detail">0.13</dimen>
+
+    <dimen name="vote_layout_width_detail">24dp</dimen>
+    <dimen name="vote_layout_height_detail">24dp</dimen>
+    <dimen name="vote_layout_marginEnd_detail">120dp</dimen>
+    <dimen name="vote_constraintHorizontal_bias_detail">0.135</dimen>
+    <dimen name="vote_layout_constraintVertical_bias_detail">0.056</dimen>
+
+
+    <dimen name="overview_layout_width_detail">280dp</dimen>
+    <dimen name="overview_layout_height_detail">95dp</dimen>
+    <dimen name="overview_layout_marginStart_detail">120dp</dimen>
+    <dimen name="overview_layout_marginEnd_detail">1dp</dimen>
+    <dimen name="overview_constVert_bias_detail">0.18</dimen>
+    <dimen name="overview_textSize_detail">15sp</dimen>
+    <dimen name="overview_constraintVertical_bias">0.1</dimen>
+
+
+    <dimen name="chapter_constraintHorizontal_bias">0.73</dimen>
+    <dimen name="chapter_constraintVertical_bias">0.129</dimen>
+    <dimen name="tv_next_marginStart_detail">12dp</dimen>
+
+
+
+    <dimen name="btn_layout_height_detail">50dp</dimen>
+    <dimen name="btn_paddingHorizontal_detail">15dp</dimen>
+    <dimen name="btn_textSize_detail">18sp</dimen>
+    <dimen name="btn_onstraintHorizontal_bias_detail">0.6</dimen>
+
+    <dimen name="maxLength_detail">180</dimen>
+
+
+    <dimen name="marginHorizontal_search">16dp</dimen>
+    <dimen name="marginTop_search">30dp</dimen>
+    <dimen name="marginBottom_search">16dp</dimen>
+
+    <dimen name="marginStart_search">16dp</dimen>
+    <dimen name="marginEnd_search">16dp</dimen>
+
+
+</resources>

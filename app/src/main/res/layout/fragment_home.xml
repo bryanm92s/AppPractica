@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <ImageView
+        android:id="@+id/strangers"
+        android:layout_width="@dimen/layout_width_home"
+        android:layout_height="@dimen/layout_height__home"
+        android:src="@drawable/strangers"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/strangersthings"
+        android:layout_width="@dimen/poster_layout_width_home"
+        android:layout_height="@dimen/poster_layout_height_home"
+        android:src="@drawable/strangersthings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/poster_constraintHorizontal_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/poster_constraintVertical_home">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_marginTop_home"
+        android:text="@string/stranger_things"
+        android:textColor="@color/color_negro"
+        android:textSize="@dimen/titulos_home"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/constraintHorizontal_home"
+        app:layout_constraintStart_toEndOf="@+id/strangersthings"
+        app:layout_constraintTop_toBottomOf="@+id/strangers"
+        app:layout_constraintVertical_bias="@dimen/constraintVertical_home">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/imageplay_width_home"
+        android:layout_height="@dimen/imageplay_height_home"
+        android:src="@drawable/ic_baseline_play_circle_outline_24"
+        app:layout_constraintBottom_toBottomOf="@+id/strangers"
+        app:layout_constraintEnd_toEndOf="@+id/strangers"
+        app:layout_constraintStart_toStartOf="@+id/strangers"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvtrailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/trailer_oficial"
+        android:textSize="@dimen/subtitulos_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/strangersthings"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle"
+        app:layout_constraintVertical_bias="0.0">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tvVertical"
+        android:layout_width="8dp"
+        android:layout_height="@dimen/layout_height_home"
+        android:background="@drawable/vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtrailer"
+        app:layout_constraintVertical_bias="0.125">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSelecciones"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layout_height_home"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/las_mejores_selecciones"
+        android:textColor="@color/color_negro"
+        android:textSize="@dimen/titulos_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/tvVertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvtrailer"
+        app:layout_constraintVertical_bias="0.125">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/first_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_end_home"
+        android:layout_marginEnd="@dimen/margin_start_end_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelecciones"
+        app:layout_constraintVertical_bias="0.5">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

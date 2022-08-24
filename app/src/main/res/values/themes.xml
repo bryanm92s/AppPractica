@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AppPractica" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_fondo</item>
+        <item name="colorPrimaryVariant">@color/color_negro</item>
+        <item name="colorOnPrimary">@color/color_blanco</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_negro</item>
+        <item name="colorSecondaryVariant">@color/color_negro</item>
+        <item name="colorOnSecondary">@color/color_negro</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Customize Splash Screen. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">
+            @drawable/splashscreen
+        </item>
+    </style>
+
+    <style name="NameStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="ImagenRedondeada">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/color_blanco</item>
+    </style>
+
+    <style name="PlainTextStyle">
+        <item name="android:ems">10</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+</resources>

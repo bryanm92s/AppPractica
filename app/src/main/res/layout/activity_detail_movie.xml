@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".detail.DetailBestMovieActivity">
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="@dimen/layout_width_moviedetails"
+        android:layout_height="@dimen/layout_height_moviedetails"
+        android:layout_marginStart="@dimen/layout__marginStart_moviedetails"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_original_title"
+        app:layout_constraintHorizontal_bias="@dimen/layout_constraintHorizontal_bias_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/layout_constraintVertical_bias_detail" />
+
+    <TextView
+        android:id="@+id/tv_original_title"
+        android:layout_width="@dimen/layout_width_detail"
+        android:layout_height="@dimen/layout_height_detail"
+        android:layout_marginStart="@dimen/layout__marginStart_moviedetails"
+        android:layout_marginEnd="@dimen/layout_marginEnd_moviedetails"
+        android:fontFamily="@font/robotobold"
+        android:gravity="center"
+        android:textColor="@color/color_negro"
+        android:textSize="@dimen/textSize_detail"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/constraintHorizontal_bias_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/layout_constraintVertical_bias_detail"
+        tools:text="Queens Gambit" />
+
+<TextView
+    android:id="@+id/tvfirstDivider"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height__detail"
+    android:background="@color/fragment_bg_color"
+    android:gravity="center"
+    android:textSize="@dimen/textSize_detail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_original_title"
+    app:layout_constraintVertical_bias="@dimen/layout_constraintVertical_bias_detail"
+    tools:layout_editor_absoluteX="0dp" />
+
+<TextView
+    android:id="@+id/tvVertical"
+    android:layout_width="@dimen/layout_width_tv_detail"
+    android:layout_height="@dimen/layout_height_tv_detail"
+    android:background="@drawable/vertical"
+    android:textSize="@dimen/textSize_moviedetails"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/layout_constraintHor_bias_vert_detail"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_original_title"
+    app:layout_constraintVertical_bias="@dimen/layout_constraintVertical_bias_detail" />
+
+<TextView
+    android:id="@+id/tv_title"
+    android:layout_width="@dimen/layout_width_tv_title_detail"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/robotobold"
+    android:textColor="@color/color_negro"
+    android:textSize="@dimen/textSize_moviedetails"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/layout_constraintHorizontal_bias_title_detail"
+    app:layout_constraintStart_toEndOf="@+id/tvVertical"
+    app:layout_constraintTop_toBottomOf="@+id/tv_original_title"
+    app:layout_constraintVertical_bias="@dimen/layout_constraintVertical_bias_detail"
+    tools:text="Gambito de Dama">
+</TextView>
+
+<TextView
+    android:id="@+id/tv_second_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/robotoregular"
+    android:textColor="@color/color_gris_claro"
+    android:textSize="@dimen/textSize_sub_detail"
+    android:textAlignment="textStart"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.33"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_title"
+    app:layout_constraintVertical_bias="@dimen/layout_constraintVertical_bias_detail"
+    tools:text="The queens Gambit (título original)">
+
+</TextView>
+
+
+    <TextView
+        android:id="@+id/tv_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_marginBottom_detail"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/color_gris_claro"
+        android:textSize="@dimen/textSize_sub_detail"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/layout_constraintH_bias_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintVertical_bias="@dimen/layout_constraintV_bias_detail"
+        tools:text="Mini Serie de TV 2020 - 2020 16" />
+
+    <ImageView
+    android:id="@+id/img_video_play"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height_vplay_detail"
+    android:scaleType="fitXY"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/layout_constraintHorizontal_bias_detail"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_release_date"
+    app:layout_constraintVertical_bias="@dimen/layout_constraintHorizontal_bias_title_detail"
+    tools:src="@drawable/gamb" />
+
+<ImageView
+    android:id="@+id/imvPlay"
+    android:layout_width="@dimen/icon_width_vplay_detail"
+    android:layout_height="@dimen/icon_height_vplay_detail"
+    android:src="@drawable/ic_baseline_play_circle_outline_24"
+    app:layout_constraintBottom_toBottomOf="@+id/img_video_play"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/img_video_play"
+    app:layout_constraintTop_toTopOf="@+id/img_video_play">
+</ImageView>
+
+<ImageView
+    android:id="@+id/img_poster"
+    android:layout_width="@dimen/poster_width_detail"
+    android:layout_height="@dimen/poster_height_detail"
+    android:scaleType="fitXY"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/poster_horivert_detail"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/img_video_play"
+    app:layout_constraintVertical_bias="@dimen/poster_horivert_detail"
+    tools:src="@drawable/gambito">
+</ImageView>
+
+<TextView
+    android:id="@+id/tv_original_language"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_genre"
+    android:paddingHorizontal="@dimen/genre_paddingHorizontal_detail"
+    android:paddingVertical="@dimen/genre_paddingVertical_detail"
+    android:textColor="@color/color_gris_claro"
+    android:textSize="@dimen/textSize_sub_detail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/layout_constraintHorizontal_bias_title_detail"
+    app:layout_constraintStart_toEndOf="@+id/img_poster"
+    app:layout_constraintTop_toBottomOf="@+id/img_video_play"
+    app:layout_constraintVertical_bias="@dimen/layout_constraintVertical_bias_detail"
+    tools:text="Drama" />
+
+
+<TextView
+    android:id="@+id/tvStars"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/star_layout_marginBottom_detail"
+    android:background="@drawable/ic_baseline_star_24"
+    android:gravity="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/star_layout_constraintHorizontal_bias_detail"
+    app:layout_constraintStart_toEndOf="@+id/tv_original_language"
+    app:layout_constraintTop_toBottomOf="@+id/img_video_play"
+    app:layout_constraintVertical_bias="@dimen/star_layout_constraintVertical_bias_detail" />
+
+    <TextView
+        android:id="@+id/tv_vote_average"
+        android:layout_width="@dimen/vote_layout_width_detail"
+        android:layout_height="@dimen/vote_layout_height_detail"
+        android:layout_marginEnd="@dimen/vote_layout_marginEnd_detail"
+        android:gravity="center"
+        android:textColor="@color/color_gris_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/vote_constraintHorizontal_bias_detail"
+        app:layout_constraintStart_toEndOf="@+id/tvStars"
+        app:layout_constraintTop_toBottomOf="@+id/img_video_play"
+        app:layout_constraintVertical_bias="@dimen/vote_layout_constraintVertical_bias_detail"
+        tools:text="5.0" />
+
+    <TextView
+        android:id="@+id/tv_overview"
+        android:layout_width="@dimen/overview_layout_width_detail"
+        android:layout_height="@dimen/overview_layout_height_detail"
+        android:layout_marginStart="@dimen/overview_layout_marginStart_detail"
+        android:layout_marginEnd="@dimen/overview_layout_marginEnd_detail"
+        android:fontFamily="@font/robotobold"
+        android:textColor="@color/color_gris_oscuro"
+        android:textSize="@dimen/textSize_overview_moviedetails"
+        android:maxLength="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_video_play"
+        app:layout_constraintVertical_bias="@dimen/overview_constVert_bias_detail"
+        tools:text="@tools:sample/lorem/random" />
+
+<TextView
+    android:id="@+id/tvmiddleDivider"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height__detail"
+    android:background="@color/fragment_bg_color"
+    android:gravity="center"
+    android:textSize="@dimen/overview_textSize_detail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_overview"
+    app:layout_constraintVertical_bias="@dimen/overview_constVert_bias_detail"
+    tools:layout_editor_absoluteX="0dp" />
+
+<TextView
+    android:id="@+id/tvGuide"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/robotobold"
+    android:text="@string/gu_a_de_episodios"
+    android:textColor="@color/color_negro"
+    android:textSize="@dimen/textSize_detail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/vote_layout_constraintVertical_bias_detail"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvmiddleDivider"
+    app:layout_constraintVertical_bias="@dimen/overview_constraintVertical_bias" />
+
+
+<TextView
+    android:id="@+id/tvnumber_of_chapters"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/color_gris_claro"
+    android:textSize="@dimen/textSize_sub_detail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/chapter_constraintHorizontal_bias"
+    app:layout_constraintStart_toEndOf="@+id/tvGuide"
+    app:layout_constraintTop_toBottomOf="@+id/tvmiddleDivider"
+    app:layout_constraintVertical_bias="@dimen/chapter_constraintVertical_bias"
+    tools:text="7 episodios" />
+
+<ImageView
+    android:id="@+id/tvNext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/tv_next_marginStart_detail"
+    android:src="@drawable/ic_baseline_navigate_next_24"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/layout_constraintHorizontal_bias_detail"
+    app:layout_constraintStart_toEndOf="@+id/tvnumber_of_chapters"
+    app:layout_constraintTop_toBottomOf="@+id/tvmiddleDivider"
+    app:layout_constraintVertical_bias="@dimen/overview_constraintVertical_bias">
+</ImageView>
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnAdd"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/btn_layout_height_detail"
+    android:background="@drawable/yellow_background"
+    android:fontFamily="@font/robotobold"
+    android:paddingHorizontal="@dimen/btn_paddingHorizontal_detail"
+    android:text="@string/agregar_a_la_lista_de_seguimiento"
+    android:textAllCaps="false"
+    android:textColor="@color/color_gris_oscuro"
+    android:textSize="@dimen/btn_textSize_detail"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="@dimen/btn_onstraintHorizontal_bias_detail"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvmiddleDivider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

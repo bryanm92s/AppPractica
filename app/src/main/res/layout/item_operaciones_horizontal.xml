@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/marginleftright_horizontal"
+    android:layout_marginRight="@dimen/marginleftright_horizontal"
+    app:cardUseCompatPadding="true"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="@dimen/width_horizontal"
+            android:layout_height="@dimen/height_horizontal"
+            android:background="@color/fragment_bg_color"
+            android:fontFamily="@font/robotobold"
+            android:padding="6dp"
+            android:textColor="@color/color_gris_oscuro"
+            android:textSize="@dimen/textSizeTexto_horizontal"
+            tools:text="Calificar y obtener recomendaciones">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/title_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/robotobold"
+            android:textColor="@color/color_gris_claro"
+            android:textSize="@dimen/textSizeTexto_horizontal"
+            tools:text="Calificaciones">
+        </TextView>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:text="0">
+        </TextView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

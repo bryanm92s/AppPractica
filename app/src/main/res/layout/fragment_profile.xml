@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blanco"
+    tools:context=".fragment.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="@dimen/layout_width_profile"
+            android:layout_height="@dimen/layout_height_profile"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065"
+            app:shapeAppearance="@style/ImagenRedondeada" />
+
+        <TextView
+            android:id="@+id/tvNombreUsuario"
+            android:layout_width="@dimen/layout_width_nombre_usuario_profile"
+            android:layout_height="@dimen/layout_height_nombre_usuario_profile"
+            android:fontFamily="@font/robotobold"
+            android:text="@string/juan_p_rez"
+            android:textColor="@color/color_negro"
+            android:textSize="@dimen/textsize_titulos_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imvConfiguracion"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <ImageView
+            android:id="@+id/imvConfiguracion"
+            android:layout_width="@dimen/dimen_configuration_profile"
+            android:layout_height="@dimen/dimen_configuration_profile"
+            android:layout_marginEnd="@dimen/dimen_configuration_profile"
+            android:src="@drawable/ic_baseline_settings_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085" />
+
+        <TextView
+            android:id="@+id/tvline_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin_start_profile"
+            android:layout_marginTop="@dimen/margin_top__profile"
+            android:layout_marginEnd="@dimen/margin_end_profile"
+            android:background="@color/color_gris_claro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombreUsuario">
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reciclerView_operaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_profile"
+            android:layout_marginTop="@dimen/margin_top__profile"
+            android:layout_marginEnd="@dimen/margin_end_profile"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvline_one"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/item_operaciones_horizontal">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tvseparator_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fragment_bg_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/margin_start_profile"
+            android:layout_marginEnd="@dimen/margin_end_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reciclerView_operaciones"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/tvvertical_one"
+            android:layout_width="@dimen/layout_width_vertical_profile"
+            android:layout_height="@dimen/layout_height_vertical_profile"
+            android:layout_marginTop="@dimen/layout_marginTop_vertical_profile"
+            android:background="@drawable/vertical"
+            android:textSize="@dimen/textsize_vertical_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvseparator_one" />
+
+        <TextView
+            android:id="@+id/tvlistadeseg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotobold"
+            android:text="@string/lista_de_seguimiento"
+            android:textColor="@color/color_negro"
+            android:textSize="@dimen/textsize_titulos_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toEndOf="@+id/tvvertical_one"
+            app:layout_constraintTop_toBottomOf="@+id/tvseparator_one"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/tvtcrea_lista"
+            android:textSize="@dimen/subtitulos_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_horizontal_profile"
+            android:layout_marginTop="@dimen/margin_top_profile"
+            android:layout_marginStart="@dimen/margin_start_profile"
+            android:layout_marginEnd="@dimen/margin_end_profile"
+            android:text="@string/crea_una_lista_de_seguimiento_para_no_perderte_ninguna_pel_cula_o_serie_de_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvlistadeseg" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnempiezatulista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/margin_end_profile"
+            android:background="@drawable/yellow_background"
+            android:fontFamily="@font/robotobold"
+            android:text="@string/empieza_tu_lista_de_seguimiento"
+            android:textAllCaps="false"
+            android:textColor="@color/color_gris_oscuro"
+            android:textSize="@dimen/textsize_titulos_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvtcrea_lista"
+            app:layout_constraintVertical_bias="0.012">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:id="@+id/tvseparator_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_separator_profile"
+            android:background="@color/fragment_bg_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnempiezatulista"
+            app:layout_constraintVertical_bias="0.1"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tvvertical_two"
+            android:layout_width="@dimen/layout_width_vertical_profile"
+            android:layout_height="@dimen/layout_height_vertical_profile"
+            android:layout_marginTop="@dimen/layout_marginTop_vertical_profile"
+            android:layout_marginBottom="@dimen/layout_marginBottom_profile"
+            android:background="@drawable/vertical"
+            android:textSize="@dimen/textsize_vertical_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvseparator_two"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvvistasrec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_marginTop_titulos_profile"
+            android:fontFamily="@font/robotobold"
+            android:text="@string/vistas_recientes"
+            android:textColor="@color/color_negro"
+            android:textSize="@dimen/textsize_titulos_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toEndOf="@+id/tvvertical_two"
+            app:layout_constraintTop_toBottomOf="@+id/tvseparator_two"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/tvnohasvisitad"
+            android:textSize="@dimen/subtitulos_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_horizontal_profile"
+            android:layout_marginTop="@dimen/margin_top_profile"
+            android:layout_marginStart="@dimen/margin_start_profile"
+            android:layout_marginEnd="@dimen/margin_end_profile"
+            android:text="@string/no_has_visitado_ninguna_p_gina_recientemente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvvistasrec" />
+
+        <TextView
+            android:id="@+id/tvseparator_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_separator_profile"
+            android:background="@color/fragment_bg_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvnohasvisitad"
+            app:layout_constraintVertical_bias="0.1"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tvvertical_three"
+            android:layout_width="@dimen/layout_width_vertical_profile"
+            android:layout_height="@dimen/layout_height_vertical_profile"
+            android:layout_marginTop="@dimen/layout_marginTop_vertical_profile"
+            android:background="@drawable/vertical"
+            android:textSize="@dimen/textsize_vertical_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvseparator_three"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvpersonasFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_marginStartFav_profile"
+            android:layout_marginTop="@dimen/layout_marginTopFav_profile"
+            android:fontFamily="@font/robotobold"
+            android:text="@string/personas_favoritas"
+            android:textColor="@color/color_negro"
+            android:textSize="@dimen/textsize_titulos_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvvertical_three"
+            app:layout_constraintTop_toBottomOf="@+id/tvseparator_three"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvagregarpersfav"
+            android:textSize="@dimen/subtitulos_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_horizontal_profile"
+            android:layout_marginTop="@dimen/margin_top_profile"
+            android:layout_marginStart="@dimen/margin_start_profile"
+            android:layout_marginEnd="@dimen/margin_end_profile"
+            android:text="@string/no_has_agregado_ninguna_persona_recientemente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvpersonasFav" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
